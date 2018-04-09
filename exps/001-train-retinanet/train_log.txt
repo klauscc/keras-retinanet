@@ -1,0 +1,48 @@
+Epoch: 7
+    Train:
+        loss: 1.6276 - regression_loss: 1.4629 - classification_loss: 0.1647
+    Test:
+        ('breast', '0.9396')
+        ('vulva', '0.5448')
+        ('dick', '0.9004')
+        ('pubes', '0.7467')
+        ('ass', '0.8153')
+        ('breast_sexy', '0.8665')
+        ('frontleg_sexy', '0.7563')
+        ('ass_sexy', '0.6653')
+        ('back_sexy', '0.6301')
+        ('body_sexy', '0.8038')
+        mAP: 0.7669
+
+Epoch: 11
+    Train:
+        loss: 1.2770 - regression_loss: 1.1562 - classification_loss: 0.1207
+    Test:
+        ('breast', '0.9380')
+        ('vulva', '0.5584')
+        ('dick', '0.9099')
+        ('pubes', '0.7645')
+        ('ass', '0.8041')
+        ('breast_sexy', '0.8665')
+        ('frontleg_sexy', '0.7589')
+        ('ass_sexy', '0.6258')
+        ('back_sexy', '0.6057')
+        ('body_sexy', '0.8427')
+        mAp: 0.7674
+
+Epoch: 16
+    Train:
+        loss: 0.9848 - regression_loss: 0.9015 - classification_loss: 0.0832
+    Test:
+        ('breast', '0.9352')
+        ('vulva', '0.5667')
+        ('dick', '0.9128')
+        ('pubes', '0.7286')
+        ('ass', '0.8126')
+        ('breast_sexy', '0.8522')
+        ('frontleg_sexy', '0.7535')
+        ('ass_sexy', '0.5892')
+        ('back_sexy', '0.6820')
+        ('body_sexy', '0.8173')
+        mAP: 0.7650
+

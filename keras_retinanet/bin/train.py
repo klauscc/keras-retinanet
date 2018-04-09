@@ -67,7 +67,7 @@ def get_session():
 
 def model_with_weights(model, weights, skip_mismatch):
     if weights is not None:
-        model.load_weights(weights, by_name=True, skip_mismatch=skip_mismatch)
+        model.load_weights(weights, by_name=True)
     return model
 
 

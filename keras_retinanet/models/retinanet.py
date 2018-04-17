@@ -165,7 +165,6 @@ def __create_pyramid_features(C3, C4, C5, feature_size=256):
 
     return [P3, P4, P5, P6, P7]
 
-
 class AnchorParameters:
     """ The parameteres that define how anchors are generated.
 
@@ -306,22 +305,38 @@ def retinanet(
 
     # compute pyramid features as per https://arxiv.org/abs/1708.02002
     features = create_pyramid_features(C3, C4, C5)
+    global_cls = __create_resnet_features(C3, C4, C5) 
 
     # for all pyramid levels, run available submodels
     pyramids = __build_pyramid(submodels, features)
     anchors  = __build_anchors(anchor_parameters, features)
 
     # concatenate outputs to one list
-    outputs = [anchors] + pyramids
+    outputs = [anchors] + pyramids + [global_cls] 
 
     return keras.models.Model(inputs=inputs, outputs=outputs, name=name)
 
+def __create_resnet_features(C3, C4, C5):
+    # D5_inter = keras.layers.Conv2D(256, kernel_size=3, strides=1, padding='same',name='D5_inter_conv1')(C5)
+    # D5_inter = keras.layers.Conv2D(256, kernel_size=3, strides=1, padding='same', name='D5_inter_conv2')(D5_inter)
+    # D5 = keras.layers.Conv2D(2048, kernel_size=3, strides=1, padding='same', name='D5')(D5_inter)
+
+    # D6 = keras.layers.Conv2D(512, kernel_size=3, strides=2, padding='same', name='D6')(D5)
+
+    # D7 = keras.layers.Conv2D(256, kernel_size=3, strides=2, padding='same', name='D7')(D6)
+    # D7_pool = keras.layers.GlobalAveragePooling2D(name='D7_pool')(D7)
+    #D8 = keras.layers.Reshape((-1, 3), name='resnet_classification_reshape')(D7_pool)
+    C5_pool = keras.layers.GlobalAveragePooling2D(name='c5_pool')(C5)
+    Global_cls = keras.layers.Dense(
+        3, activation='softmax', name='global_cls')(C5_pool)
+    return Global_cls
 
 def retinanet_bbox(
     inputs,
     num_classes,
     nms        = True,
     name       = 'retinanet-bbox',
+    global_cls = False,
     **kwargs
 ):
     """ Construct a RetinaNet model on top of a backbone and adds convenience functions to output boxes directly.
@@ -351,9 +366,11 @@ def retinanet_bbox(
     anchors        = model.outputs[0]
     regression     = model.outputs[1]
     classification = model.outputs[2]
+    Global_cls = model.outputs[3]
+    other = [] 
 
     # "other" can be any additional output from custom submodels, by default this will be []
-    other = model.outputs[3:]
+    # other = model.outputs[3:]
 
     # apply predicted regression to anchors
     boxes = layers.RegressBoxes(name='boxes')([anchors, regression])
@@ -366,6 +383,9 @@ def retinanet_bbox(
     if nms:
         nms_classification  = layers.NonMaximumSuppression(name='nms')([boxes, classification])
         outputs            += [nms_classification]
+
+    if global_cls:
+        outputs += [Global_cls] 
 
     # construct the model
     return keras.models.Model(inputs=inputs, outputs=outputs, name=name)

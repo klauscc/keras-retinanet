@@ -78,7 +78,7 @@ def _get_detections(generator, model, score_threshold=0.05, max_detections=100, 
         image, scale = generator.resize_image(image)
 
         # run network
-        _, _, boxes, nms_classification = model.predict_on_batch(np.expand_dims(image, axis=0))
+        _, _, boxes, nms_classification, global_cls = model.predict_on_batch(np.expand_dims(image, axis=0))
 
         # correct boxes for image scale
         boxes /= scale

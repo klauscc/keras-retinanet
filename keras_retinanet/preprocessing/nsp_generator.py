@@ -24,8 +24,10 @@ from PIL import Image
 
 try:
     import xml.etree.cElementTree as ET
+    from xml.etree.cElementTree import Element, SubElement
 except ImportError:
     import xml.etree.ElementTree as ET
+    from xml.etree.ElementTree import Element, SubElement
 
 voc_classes = {
     'breast': 0,
@@ -111,6 +113,9 @@ class PascalVocGenerator(Generator):
             self.image_names[image_index] + self.image_extension)
         return read_image_bgr(path)
 
+    def load_image_name(self, image_index):
+        return self.image_names[image_index]
+
     def __parse_annotation(self, element):
         truncated = _findNode(element, 'truncated', parse=int)
         difficult = _findNode(element, 'difficult', parse=int)
@@ -157,8 +162,22 @@ class PascalVocGenerator(Generator):
     def load_annotations(self, image_index):
         filename = self.image_names[image_index] + '.xml'
         try:
-            tree = ET.parse(
-                os.path.join(self.data_dir, 'Annotations', filename))
+            if "normal/" in filename:
+                img = self.load_image(image_index)
+                assert isinstance(img, (np.ndarray)), "load image: " + filename
+                height, width, channels = img.shape
+                root = Element('annotation')
+                size = SubElement(root, 'size')
+                height_element = SubElement(size, 'height')
+                height_element.text = height
+                width_element = SubElement(size, 'width')
+                width_element.text = width
+                depth_element = SubElement(size, 'depth')
+                depth_element.text = channels
+                tree = ET.ElementTree(element=root)
+            else:
+                tree = ET.parse(
+                    os.path.join(self.data_dir, 'Annotations', filename))
             return self.__parse_annotations(tree.getroot())
         except ET.ParseError as e:
             raise_from(

@@ -35,27 +35,28 @@ from ..utils.transform import transform_aabb
 
 class Generator(object):
     def __init__(
-        self,
-        transform_generator = None,
-        batch_size=1,
-        group_method='random',  # one of 'none', 'random', 'ratio'
-        shuffle_groups=True,
-        image_min_side=800,
-        image_max_side=1333,
-        transform_parameters=None,
-        compute_anchor_targets=anchor_targets_bbox,
+            self,
+            transform_generator=None,
+            batch_size=1,
+            group_method='random',  # one of 'none', 'random', 'ratio'
+            shuffle_groups=True,
+            image_min_side=800,
+            image_max_side=1333,
+            transform_parameters=None,
+            compute_anchor_targets=anchor_targets_bbox,
     ):
-        self.transform_generator    = transform_generator
-        self.batch_size             = int(batch_size)
-        self.group_method           = group_method
-        self.shuffle_groups         = shuffle_groups
-        self.image_min_side         = image_min_side
-        self.image_max_side         = image_max_side
-        self.transform_parameters   = transform_parameters or TransformParameters()
+        self.transform_generator = transform_generator
+        self.batch_size = int(batch_size)
+        self.group_method = group_method
+        self.shuffle_groups = shuffle_groups
+        self.image_min_side = image_min_side
+        self.image_max_side = image_max_side
+        self.transform_parameters = transform_parameters or TransformParameters(
+        )
         self.compute_anchor_targets = compute_anchor_targets
 
         self.group_index = 0
-        self.lock        = threading.Lock()
+        self.lock = threading.Lock()
 
         self.group_images()
 
@@ -77,66 +78,89 @@ class Generator(object):
     def load_image(self, image_index):
         raise NotImplementedError('load_image method not implemented')
 
+    def load_image_name(self, image_index):
+        raise NotImplementedError("load image name method not implemented")
+
     def load_annotations(self, image_index):
         raise NotImplementedError('load_annotations method not implemented')
 
     def load_annotations_group(self, group):
         return [self.load_annotations(image_index) for image_index in group]
 
+    def load_name_group(self, group):
+        return [self.load_image_name(image_index) for image_index in group]
+
     def filter_annotations(self, image_group, annotations_group, group):
         # test all annotations
-        for index, (image, annotations) in enumerate(zip(image_group, annotations_group)):
-            assert(isinstance(annotations, np.ndarray)), '\'load_annotations\' should return a list of numpy arrays, received: {}'.format(type(annotations))
+        for index, (image, annotations) in enumerate(
+                zip(image_group, annotations_group)):
+            assert (
+                isinstance(annotations, np.ndarray)
+            ), '\'load_annotations\' should return a list of numpy arrays, received: {}'.format(
+                type(annotations))
 
             # test x2 < x1 | y2 < y1 | x1 < 0 | y1 < 0 | x2 <= 0 | y2 <= 0 | x2 >= image.shape[1] | y2 >= image.shape[0]
             invalid_indices = np.where(
-                (annotations[:, 2] <= annotations[:, 0]) |
-                (annotations[:, 3] <= annotations[:, 1]) |
-                (annotations[:, 0] < 0) |
-                (annotations[:, 1] < 0) |
-                (annotations[:, 2] > image.shape[1]) |
-                (annotations[:, 3] > image.shape[0])
-            )[0]
+                (annotations[:, 2] <= annotations[:, 0])
+                | (annotations[:, 3] <= annotations[:, 1])
+                | (annotations[:, 0] < 0) | (annotations[:, 1] < 0)
+                | (annotations[:, 2] > image.shape[1])
+                | (annotations[:, 3] > image.shape[0]))[0]
 
             # delete invalid indices
             if len(invalid_indices):
-                warnings.warn('Image with id {} (shape {}) contains the following invalid boxes: {}.'.format(
-                    group[index],
-                    image.shape,
-                    [annotations[invalid_index, :] for invalid_index in invalid_indices]
-                ))
-                annotations_group[index] = np.delete(annotations, invalid_indices, axis=0)
+                warnings.warn(
+                    'Image with id {} (shape {}) contains the following invalid boxes: {}.'.
+                    format(group[index], image.shape, [
+                        annotations[invalid_index, :]
+                        for invalid_index in invalid_indices
+                    ]))
+                annotations_group[index] = np.delete(
+                    annotations, invalid_indices, axis=0)
 
         return image_group, annotations_group
 
     def load_image_group(self, group):
         return [self.load_image(image_index) for image_index in group]
 
-    def random_transform_group_entry(self, image, annotations):
+    def random_transform_group_entry(self, image, annotations, no_annotation):
         # randomly transform both image and annotations
         if self.transform_generator:
-            transform = adjust_transform_for_image(next(self.transform_generator), image, self.transform_parameters.relative_translation)
-            image     = apply_transform(transform, image, self.transform_parameters)
+            transform = adjust_transform_for_image(
+                next(self.transform_generator), image,
+                self.transform_parameters.relative_translation)
+            image = apply_transform(transform, image,
+                                    self.transform_parameters)
 
             # Transform the bounding boxes in the annotations.
-            annotations = annotations.copy()
-            for index in range(annotations.shape[0]):
-                annotations[index, :4] = transform_aabb(transform, annotations[index, :4])
-
-        return image, annotations
+            if not no_annotation:
+                annotations = annotations.copy()
+                for index in range(annotations.shape[0]):
+                    annotations[index, :4] = transform_aabb(
+                        transform, annotations[index, :4])
+        
+        if no_annotation:
+            return image, np.zeros((1,5) ) 
+        else:
+            return image, annotations
 
     def resize_image(self, image):
-        return resize_image(image, min_side=self.image_min_side, max_side=self.image_max_side)
+        return resize_image(
+            image, min_side=self.image_min_side, max_side=self.image_max_side)
 
     def preprocess_image(self, image):
         return preprocess_image(image)
 
-    def preprocess_group_entry(self, image, annotations):
+    def preprocess_group_entry(self, image, annotations, image_name):
         # preprocess the image
         image = self.preprocess_image(image)
 
+        no_annotation = False
+        if 'normal/' in image_name:
+            no_annotation = True
         # randomly transform image and annotations
-        image, annotations = self.random_transform_group_entry(image, annotations)
+        image, annotations = self.random_transform_group_entry(
+            image, annotations, no_annotation)
 
         # resize image
         image, image_scale = self.resize_image(image)
@@ -146,13 +170,15 @@ class Generator(object):
 
         return image, annotations
 
-    def preprocess_group(self, image_group, annotations_group):
-        for index, (image, annotations) in enumerate(zip(image_group, annotations_group)):
+    def preprocess_group(self, image_group, annotations_group, image_names):
+        for index, (image, annotations, image_name) in enumerate(
+                zip(image_group, annotations_group, image_names)):
             # preprocess a single group entry
-            image, annotations = self.preprocess_group_entry(image, annotations)
+            image, annotations = self.preprocess_group_entry(
+                image, annotations, image_name)
 
             # copy processed data back to group
-            image_group[index]       = image
+            image_group[index] = image
             annotations_group[index] = annotations
 
         return image_group, annotations_group
@@ -166,68 +192,95 @@ class Generator(object):
             order.sort(key=lambda x: self.image_aspect_ratio(x))
 
         # divide into groups, one group = one batch
-        self.groups = [[order[x % len(order)] for x in range(i, i + self.batch_size)] for i in range(0, len(order), self.batch_size)]
+        self.groups = [[
+            order[x % len(order)] for x in range(i, i + self.batch_size)
+        ] for i in range(0, len(order), self.batch_size)]
 
     def compute_inputs(self, image_group):
         # get the max image shape
-        max_shape = tuple(max(image.shape[x] for image in image_group) for x in range(3))
+        max_shape = tuple(
+            max(image.shape[x] for image in image_group) for x in range(3))
 
         # construct an image batch object
-        image_batch = np.zeros((self.batch_size,) + max_shape, dtype=keras.backend.floatx())
+        image_batch = np.zeros(
+            (self.batch_size, ) + max_shape, dtype=keras.backend.floatx())
 
         # copy all images to the upper left part of the image batch object
         for image_index, image in enumerate(image_group):
-            image_batch[image_index, :image.shape[0], :image.shape[1], :image.shape[2]] = image
+            image_batch[image_index, :image.shape[0], :image.shape[1], :
+                        image.shape[2]] = image
 
         return image_batch
 
-    def compute_targets(self, image_group, annotations_group):
+    def compute_targets(self, image_group, annotations_group, image_names):
         # get the max image shape
-        max_shape = tuple(max(image.shape[x] for image in image_group) for x in range(3))
+        max_shape = tuple(
+            max(image.shape[x] for image in image_group) for x in range(3))
+
+        # global cls group
+        global_cls_batch = np.zeros((self.batch_size, 3), dtype=np.int)
+        for image_index, im_name in enumerate(image_names):
+            if 'imgs' in im_name:
+                global_cls_batch[image_index] = [0, 0, 1]
+            elif 'normal/' in im_name:
+                global_cls_batch[image_index] = [1, 0, 0]
+            else:
+                global_cls_batch[image_index] = [0, 1, 0]
 
         # compute labels and regression targets
-        labels_group     = [None] * self.batch_size
+        labels_group = [None] * self.batch_size
         regression_group = [None] * self.batch_size
-        for index, (image, annotations) in enumerate(zip(image_group, annotations_group)):
+        for index, (image, annotations) in enumerate(
+                zip(image_group, annotations_group)):
             # compute regression targets
-            labels_group[index], annotations, anchors = self.compute_anchor_targets(
-                max_shape,
-                annotations,
-                self.num_classes(),
-                mask_shape=image.shape,
-            )
+            labels_group[
+                index], annotations, anchors = self.compute_anchor_targets(
+                    max_shape,
+                    annotations,
+                    self.num_classes(),
+                    mask_shape=image.shape,
+                )
             regression_group[index] = bbox_transform(anchors, annotations)
 
             # append anchor states to regression targets (necessary for filtering 'ignore', 'positive' and 'negative' anchors)
-            anchor_states           = np.max(labels_group[index], axis=1, keepdims=True)
-            regression_group[index] = np.append(regression_group[index], anchor_states, axis=1)
+            anchor_states = np.max(labels_group[index], axis=1, keepdims=True)
+            regression_group[index] = np.append(
+                regression_group[index], anchor_states, axis=1)
 
-        labels_batch     = np.zeros((self.batch_size,) + labels_group[0].shape, dtype=keras.backend.floatx())
-        regression_batch = np.zeros((self.batch_size,) + regression_group[0].shape, dtype=keras.backend.floatx())
+        labels_batch = np.zeros(
+            (self.batch_size, ) + labels_group[0].shape,
+            dtype=keras.backend.floatx())
+        regression_batch = np.zeros(
+            (self.batch_size, ) + regression_group[0].shape,
+            dtype=keras.backend.floatx())
 
         # copy all labels and regression values to the batch blob
-        for index, (labels, regression) in enumerate(zip(labels_group, regression_group)):
-            labels_batch[index, ...]     = labels
+        for index, (labels, regression) in enumerate(
+                zip(labels_group, regression_group)):
+            labels_batch[index, ...] = labels
             regression_batch[index, ...] = regression
 
-        return [regression_batch, labels_batch]
+        return [regression_batch, labels_batch, global_cls_batch]
 
     def compute_input_output(self, group):
         # load images and annotations
-        image_group       = self.load_image_group(group)
+        image_group = self.load_image_group(group)
         annotations_group = self.load_annotations_group(group)
+        image_names = self.load_name_group(group)
 
         # check validity of annotations
-        image_group, annotations_group = self.filter_annotations(image_group, annotations_group, group)
+        # image_group, annotations_group = self.filter_annotations(image_group, annotations_group, group)
 
         # perform preprocessing steps
-        image_group, annotations_group = self.preprocess_group(image_group, annotations_group)
+        image_group, annotations_group = self.preprocess_group(
+            image_group, annotations_group, image_names)
 
         # compute network inputs
         inputs = self.compute_inputs(image_group)
 
         # compute network targets
-        targets = self.compute_targets(image_group, annotations_group)
+        targets = self.compute_targets(image_group, annotations_group,
+                                       image_names)
 
         return inputs, targets
 

@@ -33,7 +33,7 @@ import tensorflow as tf
 CURRENT_FILE_PATH = os.path.abspath(
     os.path.dirname(os.path.realpath(__file__)))
 
-TASK_NAME = "001-train-retinanet"
+TASK_NAME = "003-multi-task-nsp"
 
 
 def get_session():
@@ -56,13 +56,12 @@ def create_callbacks(model, training_model, prediction_model, val_generator):
     """
     from keras_retinanet.callbacks import RedirectModel
     callbacks = []
-    snapshot_path = os.path.join(CURRENT_FILE_PATH, "../../data/snapshots/", TASK_NAME)
+    snapshot_path = os.path.join(CURRENT_FILE_PATH, "../../data/snapshots/",
+                                 TASK_NAME)
     if not os.path.exists(snapshot_path):
         os.makedirs(snapshot_path)
     checkpoint = keras.callbacks.ModelCheckpoint(
-        os.path.join(snapshot_path,
-                     "resnet50_nsp_{epoch:02d}.h5"),
-        verbose=1)
+        os.path.join(snapshot_path, "resnet50_nsp_{epoch:02d}.h5"), verbose=1)
     checkpoint = RedirectModel(checkpoint, prediction_model)
     callbacks.append(checkpoint)
 
@@ -78,7 +77,8 @@ def create_callbacks(model, training_model, prediction_model, val_generator):
     callbacks.append(callback)
 
     tensorboard_callback = keras.callbacks.TensorBoard(
-        log_dir=os.path.join(CURRENT_FILE_PATH, "../../data/tensorboard", TASK_NAME),
+        log_dir=os.path.join(CURRENT_FILE_PATH, "../../data/tensorboard",
+                             TASK_NAME),
         histogram_freq=0,
         batch_size=args.batch_size,
         write_graph=True,
@@ -133,14 +133,14 @@ if __name__ == '__main__':
     # create a generator for training data
     train_generator = PascalVocGenerator(
         args.voc_path,
-        'trainval',
+        'trainval_with_normal',
         # group_method = "random",
         transform_generator=transform_generator,
         batch_size=args.batch_size)
     # create a generator for testing data
     val_generator = PascalVocGenerator(
         args.voc_path,
-        'test',
+        'test_with_normal',
         # group_method = "random",
         batch_size=args.batch_size)
 
@@ -149,25 +149,28 @@ if __name__ == '__main__':
     from keras_retinanet.models.resnet import resnet_retinanet as retinanet, custom_objects, download_imagenet
     backbone = "resnet50"
     weights = download_imagenet(backbone)
-    model, training_model, prediction_model = create_models(
-        backbone_retinanet=retinanet,
-        backbone=backbone,
+    model = retinanet(
         num_classes=train_generator.num_classes(),
-        weights=weights,
-        multi_gpu=False,
-        freeze_backbone=False)
+        backbone=backbone,
+        nms=True,
+        modifier=None,
+        global_cls=True)
+    model.load_weights(weights, by_name=True) 
+    training_model = model
+    prediction_model = model
 
     # compile model (note: set loss to None since loss is added inside layer)
-    model.compile(
+    training_model.compile(
         loss={
             'regression': keras_retinanet.losses.smooth_l1(),
-            'classification': keras_retinanet.losses.focal()
-            # 'global_cls': keras_retinanet.losses.classes_focal()
+            'classification': keras_retinanet.losses.focal(),
+            'global_cls': 'categorical_crossentropy'
         },
+        metrics = {'global_cls': 'accuracy'},
         optimizer=keras.optimizers.adam(lr=1e-5, clipnorm=0.001))
 
     # print model summary
-    print(model.summary())
+    print(training_model.summary())
 
     # callbacks
     callbacks = create_callbacks(model, training_model, prediction_model,
@@ -177,7 +180,8 @@ if __name__ == '__main__':
     training_model.fit_generator(
         generator=train_generator,
         steps_per_epoch=len(train_generator.image_names) // args.batch_size,
+        validation_data=val_generator,
+        validation_steps=len(val_generator.image_names) // args.batch_size,
         epochs=50,
         verbose=1,
         callbacks=callbacks)
-

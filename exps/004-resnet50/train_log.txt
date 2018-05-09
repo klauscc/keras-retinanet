@@ -1,0 +1,147 @@
+Epoch 1/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.3406 - acc: 0.8709Epoch 00001: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50/../../data/snapshots/004-resnet50/resnet50_nsp_01.h5
+31018/31018 [==============================] - 4995s 161ms/step - loss: 0.3406 - acc: 0.8709 - val_loss: 0.2008 - val_acc: 0.9250
+Epoch 2/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.1970 - acc: 0.9294Epoch 00002: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_02.h5
+31018/31018 [==============================] - 4844s 156ms/step - loss: 0.1970 - acc: 0.9294 - val_loss: 0.1377 - val_acc: 0.9467
+Epoch 3/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.1518 - acc: 0.9446Epoch 00003: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_03.h5
+31018/31018 [==============================] - 4822s 155ms/step - loss: 0.1518 - acc: 0.9446 - val_loss: 0.1418 - val_acc: 0.9511
+Epoch 4/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.1335 - acc: 0.9513Epoch 00004: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_04.h5
+31018/31018 [==============================] - 4807s 155ms/step - loss: 0.1335 - acc: 0.9513 - val_loss: 0.1558 - val_acc: 0.9376
+Epoch 5/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.1125 - acc: 0.9586Epoch 00005: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_05.h5
+31018/31018 [==============================] - 4798s 155ms/step - loss: 0.1125 - acc: 0.9586 - val_loss: 0.1076 - val_acc: 0.9616
+Epoch 6/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0996 - acc: 0.9646Epoch 00006: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_06.h5
+31018/31018 [==============================] - 4798s 155ms/step - loss: 0.0996 - acc: 0.9646 - val_loss: 0.1020 - val_acc: 0.9613
+Epoch 7/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0837 - acc: 0.9688Epoch 00007: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_07.h5
+31018/31018 [==============================] - 4799s 155ms/step - loss: 0.0837 - acc: 0.9688 - val_loss: 0.1188 - val_acc: 0.9613
+Epoch 8/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0830 - acc: 0.9711Epoch 00008: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_08.h5
+31018/31018 [==============================] - 4806s 155ms/step - loss: 0.0830 - acc: 0.9711 - val_loss: 0.1425 - val_acc: 0.9525
+Epoch 9/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0670 - acc: 0.9769Epoch 00009: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_09.h5
+31018/31018 [==============================] - 4785s 154ms/step - loss: 0.0669 - acc: 0.9769 - val_loss: 0.1238 - val_acc: 0.9607
+Epoch 10/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0562 - acc: 0.9798Epoch 00010: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_10.h5
+31018/31018 [==============================] - 4812s 155ms/step - loss: 0.0562 - acc: 0.9799 - val_loss: 0.1222 - val_acc: 0.9590
+Epoch 11/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0595 - acc: 0.9809Epoch 00011: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_11.h5
+31018/31018 [==============================] - 4810s 155ms/step - loss: 0.0595 - acc: 0.9809 - val_loss: 0.1170 - val_acc: 0.9634
+Epoch 12/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0499 - acc: 0.9825Epoch 00012: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_12.h5
+31018/31018 [==============================] - 4804s 155ms/step - loss: 0.0499 - acc: 0.9825 - val_loss: 0.1826 - val_acc: 0.9534
+Epoch 13/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0426 - acc: 0.9851Epoch 00013: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_13.h5
+31018/31018 [==============================] - 4799s 155ms/step - loss: 0.0426 - acc: 0.9851 - val_loss: 0.1436 - val_acc: 0.9610
+Epoch 14/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0399 - acc: 0.9877Epoch 00014: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_14.h5
+31018/31018 [==============================] - 4783s 154ms/step - loss: 0.0399 - acc: 0.9877 - val_loss: 0.1960 - val_acc: 0.9426
+Epoch 15/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0378 - acc: 0.9870Epoch 00015: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_15.h5
+31018/31018 [==============================] - 4804s 155ms/step - loss: 0.0378 - acc: 0.9870 - val_loss: 0.2175 - val_acc: 0.9476
+Epoch 16/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0285 - acc: 0.9896Epoch 00016: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_16.h5
+31018/31018 [==============================] - 4784s 154ms/step - loss: 0.0285 - acc: 0.9896 - val_loss: 0.1997 - val_acc: 0.9549
+Epoch 17/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0295 - acc: 0.9902Epoch 00017: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_17.h5
+31018/31018 [==============================] - 4784s 154ms/step - loss: 0.0295 - acc: 0.9902 - val_loss: 0.3303 - val_acc: 0.9315
+Epoch 18/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0322 - acc: 0.9895Epoch 00018: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_18.h5
+31018/31018 [==============================] - 4802s 155ms/step - loss: 0.0322 - acc: 0.9895 - val_loss: 0.1176 - val_acc: 0.9607
+Epoch 19/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0235 - acc: 0.9920Epoch 00019: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_19.h5
+31018/31018 [==============================] - 4786s 154ms/step - loss: 0.0235 - acc: 0.9920 - val_loss: 0.1478 - val_acc: 0.9625
+Epoch 20/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0342 - acc: 0.9886Epoch 00020: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_20.h5
+31018/31018 [==============================] - 4807s 155ms/step - loss: 0.0342 - acc: 0.9886 - val_loss: 0.1602 - val_acc: 0.9578
+Epoch 21/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0287 - acc: 0.9904Epoch 00021: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_21.h5
+31018/31018 [==============================] - 4799s 155ms/step - loss: 0.0287 - acc: 0.9904 - val_loss: 0.1556 - val_acc: 0.9561
+Epoch 22/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0202 - acc: 0.9936Epoch 00022: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_22.h5
+31018/31018 [==============================] - 4660s 150ms/step - loss: 0.0202 - acc: 0.9936 - val_loss: 0.2131 - val_acc: 0.9555
+Epoch 23/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0232 - acc: 0.9922Epoch 00023: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_23.h5
+31018/31018 [==============================] - 4640s 150ms/step - loss: 0.0232 - acc: 0.9922 - val_loss: 0.1513 - val_acc: 0.9599
+Epoch 24/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0144 - acc: 0.9956Epoch 00024: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_24.h5
+31018/31018 [==============================] - 4343s 140ms/step - loss: 0.0144 - acc: 0.9956 - val_loss: 0.1920 - val_acc: 0.9575
+Epoch 25/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0203 - acc: 0.9938Epoch 00025: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_25.h5
+31018/31018 [==============================] - 4787s 154ms/step - loss: 0.0203 - acc: 0.9938 - val_loss: 0.1958 - val_acc: 0.9540
+Epoch 26/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0285 - acc: 0.9909Epoch 00026: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_26.h5
+31018/31018 [==============================] - 4588s 148ms/step - loss: 0.0285 - acc: 0.9909 - val_loss: 0.1495 - val_acc: 0.9581
+Epoch 27/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0154 - acc: 0.9955Epoch 00027: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_27.h5
+
+Epoch 00027: reducing learning rate to 0.00010000000475.
+31018/31018 [==============================] - 4770s 154ms/step - loss: 0.0154 - acc: 0.9955 - val_loss: 0.1514 - val_acc: 0.9605
+Epoch 28/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0044 - acc: 0.9991Epoch 00028: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_28.h5
+31018/31018 [==============================] - 4671s 151ms/step - loss: 0.0044 - acc: 0.9991 - val_loss: 0.1553 - val_acc: 0.9646
+Epoch 29/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0017 - acc: 0.9997Epoch 00029: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_29.h5
+31018/31018 [==============================] - 4790s 154ms/step - loss: 0.0017 - acc: 0.9997 - val_loss: 0.1587 - val_acc: 0.9628
+Epoch 30/50
+31017/31018 [============================>.] - ETA: 0s - loss: 9.2097e-04 - acc: 0.9997Epoch 00030: saving model to /home/klaus/projects/004-nsp/exps/004-resn
+et50/../../data/snapshots/004-resnet50/resnet50_nsp_30.h5
+31018/31018 [==============================] - 4772s 154ms/step - loss: 9.2105e-04 - acc: 0.9997 - val_loss: 0.1732 - val_acc: 0.9646
+Epoch 31/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0010 - acc: 0.9997Epoch 00031: saving model to /home/klaus/projects/004-nsp/exps/004-resnet50
+/../../data/snapshots/004-resnet50/resnet50_nsp_31.h5
+31018/31018 [==============================] - 4829s 156ms/step - loss: 0.0010 - acc: 0.9997 - val_loss: 0.1689 - val_acc: 0.9657
+Epoch 32/50
+31017/31018 [============================>.] - ETA: 0s - loss: 8.6810e-04 - acc: 0.9996Epoch 00032: saving model to /home/klaus/projects/004-nsp/exps/004-resn
+et50/../../data/snapshots/004-resnet50/resnet50_nsp_32.h5
+31018/31018 [==============================] - 4834s 156ms/step - loss: 8.6807e-04 - acc: 0.9996 - val_loss: 0.1731 - val_acc: 0.9654
+Epoch 33/50
+31017/31018 [============================>.] - ETA: 0s - loss: 7.2568e-04 - acc: 0.9998Epoch 00033: saving model to /home/klaus/projects/004-nsp/exps/004-resn
+et50/../../data/snapshots/004-resnet50/resnet50_nsp_33.h5
+31018/31018 [==============================] - 4826s 156ms/step - loss: 7.2565e-04 - acc: 0.9998 - val_loss: 0.1762 - val_acc: 0.9637
+Epoch 34/50
+31017/31018 [============================>.] - ETA: 0s - loss: 7.0939e-04 - acc: 0.9997Epoch 00034: saving model to /home/klaus/projects/004-nsp/exps/004-resn
+et50/../../data/snapshots/004-resnet50/resnet50_nsp_34.h5
+31018/31018 [==============================] - 4804s 155ms/step - loss: 7.0936e-04 - acc: 0.9997 - val_loss: 0.1721 - val_acc: 0.9657
+Epoch 35/50
+31017/31018 [============================>.] - ETA: 0s - loss: 8.9326e-04 - acc: 0.9996Epoch 00035: saving model to /home/klaus/projects/004-nsp/exps/004-resn
+et50/../../data/snapshots/004-resnet50/resnet50_nsp_35.h5
+31018/31018 [==============================] - 4840s 156ms/step - loss: 8.9323e-04 - acc: 0.9996 - val_loss: 0.1745 - val_acc: 0.9646
+Epoch 36/50
+31017/31018 [============================>.] - ETA: 0s - loss: 6.6245e-04 - acc: 0.9996Epoch 00036: saving model to /home/klaus/projects/004-nsp/exps/004-resn
+et50/../../data/snapshots/004-resnet50/resnet50_nsp_36.h5
+
+Epoch 00036: reducing learning rate to 1.0000000475e-05.
+31018/31018 [==============================] - 4782s 154ms/step - loss: 6.6243e-04 - acc: 0.9996 - val_loss: 0.1798 - val_acc: 0.9643

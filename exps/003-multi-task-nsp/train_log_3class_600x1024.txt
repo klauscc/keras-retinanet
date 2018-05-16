@@ -1,0 +1,209 @@
+31017/31018 [============================>.] - ETA: 0s - loss: 2.8318 - regression_loss: 1.8264 - classification_loss: 0.4270 - global_cls_loss: 0.5784 - global_cls_acc: 0.9113Epoch 00001: saving model to /home/chengfeng/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_01.h5
+('breast', '0.8595')
+('vulva', '0.3614')
+('dick', '0.7270')
+('pubes', '0.6026')
+('ass', '0.6178')
+('breast_sexy', '0.5888')
+('frontleg_sexy', '0.4401')
+('ass_sexy', '0.3255')
+('back_sexy', '0.1083')
+('body_sexy', '0.6114')
+mAP: 0.5242
+31018/31018 [==============================] - 9636s 311ms/step - loss: 2.8317 - regression_loss: 1.8263 - classification_loss: 0.4270 - global_cls_loss: 0.5784 - global_cls_acc: 0.9113 - val_loss: 2.2135 - val_regression_loss: 1.5778 - val_classification_loss: 0.3099 - val_global_cls_loss: 0.3258 - val_global_cls_acc: 0.9484
+Epoch 2/50
+31017/31018 [============================>.] - ETA: 0s - loss: 2.1102 - regression_loss: 1.4497 - classification_loss: 0.2967 - global_cls_loss: 0.3637 - global_cls_acc: 0.9481Epoch 00002: saving model to /home/chengfeng/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_02.h5
+('breast', '0.9098')
+('vulva', '0.5028')
+('dick', '0.8507')
+('pubes', '0.6365')
+('ass', '0.7566')
+('breast_sexy', '0.6996')
+('frontleg_sexy', '0.5766')
+('ass_sexy', '0.5038')
+('back_sexy', '0.3808')
+('body_sexy', '0.6883')
+mAP: 0.6506
+31018/31018 [==============================] - 8518s 275ms/step - loss: 2.1101 - regression_loss: 1.4497 - classification_loss: 0.2967 - global_cls_loss: 0.3637 - global_cls_acc: 0.9481 - val_loss: 1.8796 - val_regression_loss: 1.3936 - val_classification_loss: 0.2414 - val_global_cls_loss: 0.2446 - val_global_cls_acc: 0.9625
+Epoch 3/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.8821 - regression_loss: 1.3276 - classification_loss: 0.2539 - global_cls_loss: 0.3007 - global_cls_acc: 0.9565Epoch 00003: saving model to /home/chengfeng/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_03.h5
+('breast', '0.9170')
+('vulva', '0.5494')
+('dick', '0.8672')
+('pubes', '0.7094')
+('ass', '0.7503')
+('breast_sexy', '0.6270')
+('frontleg_sexy', '0.5648')
+('ass_sexy', '0.5233')
+('back_sexy', '0.4190')
+('body_sexy', '0.6596')
+mAP: 0.6587
+31018/31018 [==============================] - 8775s 283ms/step - loss: 1.8821 - regression_loss: 1.3276 - classification_loss: 0.2539 - global_cls_loss: 0.3007 - global_cls_acc: 0.9565 - val_loss: 2.1281 - val_regression_loss: 1.3249 - val_classification_loss: 0.2685 - val_global_cls_loss: 0.5347 - val_global_cls_acc: 0.9262
+Epoch 4/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.7038 - regression_loss: 1.2403 - classification_loss: 0.2269 - global_cls_loss: 0.2366 - global_cls_acc: 0.9668Epoch 00004: saving model to /home/chengfeng/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_04.h5
+('breast', '0.9334')
+('vulva', '0.5995')
+('dick', '0.8864')
+('pubes', '0.7148')
+('ass', '0.7868')
+('breast_sexy', '0.7834')
+('frontleg_sexy', '0.6407')
+('ass_sexy', '0.5922')
+('back_sexy', '0.5156')
+('body_sexy', '0.7537')
+mAP: 0.7207
+31018/31018 [==============================] - 9855s 318ms/step - loss: 1.7038 - regression_loss: 1.2402 - classification_loss: 0.2269 - global_cls_loss: 0.2366 - global_cls_acc: 0.9668 - val_loss: 1.7946 - val_regression_loss: 1.3138 - val_classification_loss: 0.2347 - val_global_cls_loss: 0.2461 - val_global_cls_acc: 0.9657
+Epoch 5/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.5745 - regression_loss: 1.1690 - classification_loss: 0.2117 - global_cls_loss: 0.1938 - global_cls_acc: 0.9722Epoch 00005: saving model to /home/chengfeng/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_05.h5
+('breast', '0.9262')
+('vulva', '0.5086')
+('dick', '0.8678')
+('pubes', '0.7174')
+('ass', '0.7963')
+('breast_sexy', '0.7545')
+('frontleg_sexy', '0.6783')
+('ass_sexy', '0.6253')
+('back_sexy', '0.5445')
+('body_sexy', '0.7615')
+mAP: 0.7180
+31018/31018 [==============================] - 9543s 308ms/step - loss: 1.5745 - regression_loss: 1.1690 - classification_loss: 0.2117 - global_cls_loss: 0.1938 - global_cls_acc: 0.9722 - val_loss: 1.8242 - val_regression_loss: 1.3361 - val_classification_loss: 0.2409 - val_global_cls_loss: 0.2472 - val_global_cls_acc: 0.9616
+Epoch 6/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.4472 - regression_loss: 1.1054 - classification_loss: 0.1853 - global_cls_loss: 0.1565 - global_cls_acc: 0.9772Epoch 00006: saving model to /home/chengfeng/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_06.h5
+('breast', '0.9363')
+('vulva', '0.6067')
+('dick', '0.8927')
+('pubes', '0.7567')
+('ass', '0.8094')
+('breast_sexy', '0.7504')
+('frontleg_sexy', '0.6903')
+('ass_sexy', '0.6230')
+('back_sexy', '0.5606')
+('body_sexy', '0.7751')
+mAP: 0.7401
+31018/31018 [==============================] - 9606s 310ms/step - loss: 1.4472 - regression_loss: 1.1053 - classification_loss: 0.1853 - global_cls_loss: 0.1565 - global_cls_acc: 0.9772 - val_loss: 1.8381 - val_regression_loss: 1.3023 - val_classification_loss: 0.2578 - val_global_cls_loss: 0.2779 - val_global_cls_acc: 0.9613
+Epoch 7/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.3437 - regression_loss: 1.0418 - classification_loss: 0.1761 - global_cls_loss: 0.1259 - global_cls_acc: 0.9815Epoch 00007: saving model to /home/chengfeng/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_07.h5
+('breast', '0.9337')
+('vulva', '0.5784')
+('dick', '0.8970')
+('pubes', '0.7411')
+('ass', '0.7859')
+('breast_sexy', '0.8153')
+('frontleg_sexy', '0.7099')
+('ass_sexy', '0.6051')
+('back_sexy', '0.5944')
+('body_sexy', '0.7782')
+mAP: 0.7439
+31018/31018 [==============================] - 8651s 279ms/step - loss: 1.3437 - regression_loss: 1.0417 - classification_loss: 0.1761 - global_cls_loss: 0.1259 - global_cls_acc: 0.9815 - val_loss: 1.8197 - val_regression_loss: 1.2745 - val_classification_loss: 0.2757 - val_global_cls_loss: 0.2695 - val_global_cls_acc: 0.9561
+Epoch 8/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.2361 - regression_loss: 0.9861 - classification_loss: 0.1521 - global_cls_loss: 0.0979 - global_cls_acc: 0.9853Epoch 00008: saving model to /home/chengfeng/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_08.h5
+('breast', '0.9338')
+('vulva', '0.5771')
+('dick', '0.9062')
+('pubes', '0.7602')
+('ass', '0.8200')
+('breast_sexy', '0.7749')
+('frontleg_sexy', '0.6316')
+('ass_sexy', '0.6037')
+('back_sexy', '0.5544')
+('body_sexy', '0.7492')
+mAP: 0.7311
+31018/31018 [==============================] - 9970s 321ms/step - loss: 1.2366 - regression_loss: 0.9861 - classification_loss: 0.1521 - global_cls_loss: 0.0983 - global_cls_acc: 0.9853 - val_loss: 1.8154 - val_regression_loss: 1.2779 - val_classification_loss: 0.2765 - val_global_cls_loss: 0.2610 - val_global_cls_acc: 0.9631
+Epoch 9/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.1462 - regression_loss: 0.9291 - classification_loss: 0.1366 - global_cls_loss: 0.0805 - global_cls_acc: 0.9875Epoch 00009: saving model to /home/chengfeng/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_09.h5
+('breast', '0.9420')
+('vulva', '0.5713')
+('dick', '0.9014')
+('pubes', '0.7536')
+('ass', '0.8278')
+('breast_sexy', '0.8052')
+('frontleg_sexy', '0.7153')
+('ass_sexy', '0.6257')
+('back_sexy', '0.6155')
+('body_sexy', '0.8114')
+mAP: 0.7569
+31018/31018 [==============================] - 9695s 313ms/step - loss: 1.1463 - regression_loss: 0.9291 - classification_loss: 0.1366 - global_cls_loss: 0.0805 - global_cls_acc: 0.9875 - val_loss: 1.8654 - val_regression_loss: 1.2904 - val_classification_loss: 0.3524 - val_global_cls_loss: 0.2226 - val_global_cls_acc: 0.9675
+Epoch 10/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.0701 - regression_loss: 0.8792 - classification_loss: 0.1272 - global_cls_loss: 0.0637 - global_cls_acc: 0.9898Epoch 00010: saving model to /home/chengfeng/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_10.h5
+('breast', '0.9406')
+('vulva', '0.5519')
+('dick', '0.9070')
+('pubes', '0.7655')
+('ass', '0.8236')
+('breast_sexy', '0.7528')
+('frontleg_sexy', '0.6888')
+('ass_sexy', '0.6529')
+('back_sexy', '0.5586')
+('body_sexy', '0.7873')
+mAP: 0.7429
+31018/31018 [==============================] - 9968s 321ms/step - loss: 1.0701 - regression_loss: 0.8792 - classification_loss: 0.1272 - global_cls_loss: 0.0637 - global_cls_acc: 0.9898 - val_loss: 1.9804 - val_regression_loss: 1.2956 - val_classification_loss: 0.3284 - val_global_cls_loss: 0.3564 - val_global_cls_acc: 0.9499
+Epoch 11/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.0050 - regression_loss: 0.8319 - classification_loss: 0.1141 - global_cls_loss: 0.0590 - global_cls_acc: 0.9912Epoch 00011: saving model to /home/chengfeng/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_11.h5
+('breast', '0.9407')
+('vulva', '0.5504')
+('dick', '0.9055')
+('pubes', '0.7601')
+('ass', '0.8265')
+('breast_sexy', '0.8119')
+('frontleg_sexy', '0.6931')
+('ass_sexy', '0.5955')
+('back_sexy', '0.5328')
+('body_sexy', '0.8032')
+mAP: 0.7420
+31018/31018 [==============================] - 9309s 300ms/step - loss: 1.0049 - regression_loss: 0.8319 - classification_loss: 0.1141 - global_cls_loss: 0.0590 - global_cls_acc: 0.9912 - val_loss: 1.8707 - val_regression_loss: 1.3225 - val_classification_loss: 0.3035 - val_global_cls_loss: 0.2447 - val_global_cls_acc: 0.9634
+Epoch 12/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.9378 - regression_loss: 0.7894 - classification_loss: 0.1000 - global_cls_loss: 0.0484 - global_cls_acc: 0.9926Epoch 00012: saving model to /home/chengfeng/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_12.h5
+('breast', '0.9453')
+('vulva', '0.5356')
+('dick', '0.9073')
+('pubes', '0.7615')
+('ass', '0.8236')
+('breast_sexy', '0.7897')
+('frontleg_sexy', '0.6647')
+('ass_sexy', '0.6243')
+('back_sexy', '0.5577')
+('body_sexy', '0.7660')
+mAP: 0.7376
+31018/31018 [==============================] - 8990s 290ms/step - loss: 0.9383 - regression_loss: 0.7895 - classification_loss: 0.1001 - global_cls_loss: 0.0488 - global_cls_acc: 0.9925 - val_loss: 1.9386 - val_regression_loss: 1.3003 - val_classification_loss: 0.3273 - val_global_cls_loss: 0.3111 - val_global_cls_acc: 0.9596
+Epoch 13/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.8858 - regression_loss: 0.7501 - classification_loss: 0.0928 - global_cls_loss: 0.0429 - global_cls_acc: 0.9932Epoch 00013: saving model to /home/chengfeng/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_13.h5
+('breast', '0.9385')
+('vulva', '0.5511')
+('dick', '0.9048')
+('pubes', '0.7540')
+('ass', '0.7854')
+('breast_sexy', '0.7643')
+('frontleg_sexy', '0.6667')
+('ass_sexy', '0.6277')
+('back_sexy', '0.5615')
+('body_sexy', '0.7764')
+mAP: 0.7330
+31018/31018 [==============================] - 10565s 341ms/step - loss: 0.8858 - regression_loss: 0.7501 - classification_loss: 0.0928 - global_cls_loss: 0.0429 - global_cls_acc: 0.9932 - val_loss: 1.9312 - val_regression_loss: 1.2869 - val_classification_loss: 0.3149 - val_global_cls_loss: 0.3294 - val_global_cls_acc: 0.9593
+Epoch 14/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.8326 - regression_loss: 0.7138 - classification_loss: 0.0830 - global_cls_loss: 0.0358 - global_cls_acc: 0.9943Epoch 00014: saving model to /home/chengfeng/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_14.h5
+('breast', '0.9384')
+('vulva', '0.5224')
+('dick', '0.9067')
+('pubes', '0.7500')
+('ass', '0.8011')
+('breast_sexy', '0.7896')
+('frontleg_sexy', '0.7107')
+('ass_sexy', '0.6175')
+('back_sexy', '0.4977')
+('body_sexy', '0.7647')
+mAP: 0.7299
+31018/31018 [==============================] - 10369s 334ms/step - loss: 0.8326 - regression_loss: 0.7138 - classification_loss: 0.0830 - global_cls_loss: 0.0358 - global_cls_acc: 0.9943 - val_loss: 2.0179 - val_regression_loss: 1.3113 - val_classification_loss: 0.4492 - val_global_cls_loss: 0.2574 - val_global_cls_acc: 0.9619
+Epoch 15/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.7898 - regression_loss: 0.6807 - classification_loss: 0.0759 - global_cls_loss: 0.0331 - global_cls_acc: 0.9946Epoch 00015: saving model to /home/chengfeng/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_15.h5
+('breast', '0.9365')
+('vulva', '0.5577')
+('dick', '0.9045')
+('pubes', '0.7390')
+('ass', '0.7874')
+('breast_sexy', '0.7678')
+('frontleg_sexy', '0.6755')
+('ass_sexy', '0.6004')
+('back_sexy', '0.5439')
+('body_sexy', '0.7733')
+mAP: 0.7286
+31018/31018 [==============================] - 10218s 329ms/step - loss: 0.7898 - regression_loss: 0.6807 - classification_loss: 0.0759 - global_cls_loss: 0.0331 - global_cls_acc: 0.9946 - val_loss: 2.1752 - val_regression_loss: 1.3425 - val_classification_loss: 0.5493 - val_global_cls_loss: 0.2833 - val_global_cls_acc: 0.9631

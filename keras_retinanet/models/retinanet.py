@@ -266,7 +266,6 @@ def __build_anchors(anchor_parameters, features):
 
     return keras.layers.Concatenate(axis=1, name='anchors')(anchors)
 
-
 def retinanet(
     inputs,
     backbone_layers,

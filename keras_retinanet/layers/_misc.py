@@ -15,6 +15,7 @@ limitations under the License.
 """
 
 import keras
+import tensorflow as tf
 from .. import backend
 from ..utils import anchors as utils_anchors
 
@@ -114,8 +115,11 @@ class NonMaximumSuppression(keras.layers.Layer):
 
         # reconstruct the (suppressed) classification scores
         classification = keras.backend.concatenate(selected_scores, axis=1)
+        classification = keras.backend.expand_dims(classification, axis=0)
+        #stop gradient on nms
+        classification = tf.stop_gradient(classification) 
 
-        return keras.backend.expand_dims(classification, axis=0)
+        return classification
 
     def compute_output_shape(self, input_shape):
         return input_shape[1]

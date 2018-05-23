@@ -304,7 +304,7 @@ def retinanet(
 
     # compute pyramid features as per https://arxiv.org/abs/1708.02002
     features = create_pyramid_features(C3, C4, C5)
-    global_cls = __create_resnet_features(C3, C4, C5) 
+    global_cls, global_feature = __create_resnet_features(C3, C4, C5) 
 
     # for all pyramid levels, run available submodels
     pyramids = __build_pyramid(submodels, features)
@@ -313,7 +313,7 @@ def retinanet(
     # concatenate outputs to one list
     outputs = [anchors] + pyramids + [global_cls] 
 
-    return keras.models.Model(inputs=inputs, outputs=outputs, name=name)
+    return keras.models.Model(inputs=inputs, outputs=outputs, name=name), features, global_feature
 
 def __create_resnet_features(C3, C4, C5):
     # D5_inter = keras.layers.Conv2D(256, kernel_size=3, strides=1, padding='same',name='D5_inter_conv1')(C5)
@@ -328,7 +328,7 @@ def __create_resnet_features(C3, C4, C5):
     C5_pool = keras.layers.GlobalAveragePooling2D(name='c5_pool')(C5)
     Global_cls = keras.layers.Dense(
         3, activation='softmax', name='global_cls')(C5_pool)
-    return Global_cls
+    return Global_cls, C5_pool
 
 def retinanet_bbox(
     inputs,
@@ -359,7 +359,7 @@ def retinanet_bbox(
         ]
         ```
     """
-    model = retinanet(inputs=inputs, num_classes=num_classes, **kwargs)
+    model, features, global_feature = retinanet(inputs=inputs, num_classes=num_classes, **kwargs)
 
     # we expect the anchors, regression and classification values as first output
     anchors        = model.outputs[0]

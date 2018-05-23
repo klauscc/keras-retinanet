@@ -260,7 +260,13 @@ class Generator(object):
             labels_batch[index, ...] = labels
             regression_batch[index, ...] = regression
 
-        return [regression_batch, labels_batch, global_cls_batch]
+        # return [regression_batch, labels_batch, global_cls_batch]
+        return { 
+                 'regression': regression_batch,
+                 'classification': labels_batch,
+                 'global_cls': global_cls_batch,
+                'fusion_classification': global_cls_batch
+        } 
 
     def compute_input_output(self, group):
         # load images and annotations

@@ -1,0 +1,167 @@
+31017/31018 [============================>.] - ETA: 0s - loss: 0.1283 - acc: 0.9855Epoch 00001: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_01.h5
+31018/31018 [==============================] - 2639s 85ms/step - loss: 0.1283 - acc: 0.9855 - val_loss: 0.3785 - val_acc: 0.9692
+Epoch 2/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0882 - acc: 0.9918Epoch 00002: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_02.h5
+31018/31018 [==============================] - 2650s 85ms/step - loss: 0.0882 - acc: 0.9918 - val_loss: 0.3878 - val_acc: 0.9672
+Epoch 3/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0827 - acc: 0.9927Epoch 00003: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_03.h5
+31018/31018 [==============================] - 2610s 84ms/step - loss: 0.0827 - acc: 0.9927 - val_loss: 0.4639 - val_acc: 0.9646
+Epoch 4/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0894 - acc: 0.9923Epoch 00004: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_04.h5
+31018/31018 [==============================] - 2601s 84ms/step - loss: 0.0894 - acc: 0.9923 - val_loss: 0.4676 - val_acc: 0.9651
+Epoch 5/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0842 - acc: 0.9929Epoch 00005: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_05.h5
+31018/31018 [==============================] - 2602s 84ms/step - loss: 0.0842 - acc: 0.9929 - val_loss: 0.4056 - val_acc: 0.9701
+Epoch 6/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0786 - acc: 0.9933Epoch 00006: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_06.h5
+31018/31018 [==============================] - 2596s 84ms/step - loss: 0.0786 - acc: 0.9933 - val_loss: 0.4305 - val_acc: 0.9663
+Epoch 7/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0741 - acc: 0.9937Epoch 00007: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_07.h5
+31018/31018 [==============================] - 2598s 84ms/step - loss: 0.0741 - acc: 0.9937 - val_loss: 0.4484 - val_acc: 0.9643
+Epoch 8/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0702 - acc: 0.9940Epoch 00008: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_08.h5
+31018/31018 [==============================] - 2594s 84ms/step - loss: 0.0702 - acc: 0.9940 - val_loss: 0.4263 - val_acc: 0.9687
+Epoch 9/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0736 - acc: 0.9943Epoch 00009: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_09.h5
+31018/31018 [==============================] - 2602s 84ms/step - loss: 0.0736 - acc: 0.9943 - val_loss: 0.4278 - val_acc: 0.9678
+Epoch 10/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0734 - acc: 0.9938Epoch 00010: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_10.h5
+31018/31018 [==============================] - 2596s 84ms/step - loss: 0.0734 - acc: 0.9938 - val_loss: 0.4065 - val_acc: 0.9704
+Epoch 11/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0639 - acc: 0.9945Epoch 00011: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_11.h5
+31018/31018 [==============================] - 2601s 84ms/step - loss: 0.0639 - acc: 0.9945 - val_loss: 0.4099 - val_acc: 0.9690
+Epoch 12/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0752 - acc: 0.9935Epoch 00012: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_12.h5
+31018/31018 [==============================] - 2599s 84ms/step - loss: 0.0752 - acc: 0.9935 - val_loss: 0.4532 - val_acc: 0.9660
+Epoch 13/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0699 - acc: 0.9942Epoch 00013: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_13.h5
+31018/31018 [==============================] - 2597s 84ms/step - loss: 0.0699 - acc: 0.9942 - val_loss: 0.4556 - val_acc: 0.9646
+Epoch 14/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0669 - acc: 0.9947Epoch 00014: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_14.h5
+
+Epoch 00014: reducing learning rate to 0.00010000000475.
+31018/31018 [==============================] - 2600s 84ms/step - loss: 0.0669 - acc: 0.9947 - val_loss: 0.4075 - val_acc: 0.9698
+Epoch 15/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0599 - acc: 0.9955Epoch 00015: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_15.h5
+31018/31018 [==============================] - 2606s 84ms/step - loss: 0.0599 - acc: 0.9955 - val_loss: 0.4285 - val_acc: 0.9687
+Epoch 16/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0591 - acc: 0.9953Epoch 00016: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_16.h5
+31018/31018 [==============================] - 2607s 84ms/step - loss: 0.0591 - acc: 0.9953 - val_loss: 0.4023 - val_acc: 0.9698
+Epoch 17/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0592 - acc: 0.9951Epoch 00017: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_17.h5
+31018/31018 [==============================] - 2596s 84ms/step - loss: 0.0592 - acc: 0.9951 - val_loss: 0.4192 - val_acc: 0.9692
+Epoch 18/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0588 - acc: 0.9953Epoch 00018: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_18.h5
+31018/31018 [==============================] - 2597s 84ms/step - loss: 0.0588 - acc: 0.9953 - val_loss: 0.4078 - val_acc: 0.9710
+Epoch 19/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0575 - acc: 0.9955Epoch 00019: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_19.h5
+31018/31018 [==============================] - 2606s 84ms/step - loss: 0.0575 - acc: 0.9955 - val_loss: 0.4073 - val_acc: 0.9704
+Epoch 20/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0599 - acc: 0.9953Epoch 00020: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_20.h5
+31018/31018 [==============================] - 2595s 84ms/step - loss: 0.0599 - acc: 0.9953 - val_loss: 0.4107 - val_acc: 0.9684
+Epoch 21/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0597 - acc: 0.9956Epoch 00021: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_21.h5
+31018/31018 [==============================] - 2591s 84ms/step - loss: 0.0597 - acc: 0.9956 - val_loss: 0.4103 - val_acc: 0.9704
+Epoch 22/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0542 - acc: 0.9957Epoch 00022: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_22.h5
+31018/31018 [==============================] - 2592s 84ms/step - loss: 0.0542 - acc: 0.9957 - val_loss: 0.4107 - val_acc: 0.9692
+Epoch 23/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0538 - acc: 0.9959Epoch 00023: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_23.h5
+31018/31018 [==============================] - 2604s 84ms/step - loss: 0.0538 - acc: 0.9959 - val_loss: 0.4087 - val_acc: 0.9704
+Epoch 24/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0559 - acc: 0.9956Epoch 00024: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_24.h5
+31018/31018 [==============================] - 2598s 84ms/step - loss: 0.0559 - acc: 0.9956 - val_loss: 0.4116 - val_acc: 0.9695
+Epoch 25/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0569 - acc: 0.9956Epoch 00025: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_25.h5
+31018/31018 [==============================] - 2604s 84ms/step - loss: 0.0569 - acc: 0.9956 - val_loss: 0.4140 - val_acc: 0.9701
+Epoch 26/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0549 - acc: 0.9958Epoch 00026: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_26.h5
+
+Epoch 00026: reducing learning rate to 1.0000000475e-05.
+31018/31018 [==============================] - 2605s 84ms/step - loss: 0.0549 - acc: 0.9958 - val_loss: 0.4118 - val_acc: 0.9695
+Epoch 27/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0535 - acc: 0.9958Epoch 00027: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_27.h5
+31018/31018 [==============================] - 2589s 83ms/step - loss: 0.0535 - acc: 0.9958 - val_loss: 0.4092 - val_acc: 0.9701
+Epoch 28/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0527 - acc: 0.9959Epoch 00028: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_28.h5
+31018/31018 [==============================] - 2601s 84ms/step - loss: 0.0527 - acc: 0.9959 - val_loss: 0.4090 - val_acc: 0.9692
+Epoch 29/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0552 - acc: 0.9958Epoch 00029: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_29.h5
+31018/31018 [==============================] - 2604s 84ms/step - loss: 0.0552 - acc: 0.9958 - val_loss: 0.4037 - val_acc: 0.9704
+Epoch 30/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0567 - acc: 0.9955Epoch 00030: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_30.h5
+31018/31018 [==============================] - 2603s 84ms/step - loss: 0.0567 - acc: 0.9955 - val_loss: 0.4055 - val_acc: 0.9704
+Epoch 31/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0545 - acc: 0.9959Epoch 00031: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_31.h5
+
+Epoch 00031: reducing learning rate to 1.00000006569e-06.
+31018/31018 [==============================] - 2594s 84ms/step - loss: 0.0545 - acc: 0.9959 - val_loss: 0.4175 - val_acc: 0.9695
+Epoch 32/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0535 - acc: 0.9957Epoch 00032: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_32.h5
+31018/31018 [==============================] - 2603s 84ms/step - loss: 0.0535 - acc: 0.9957 - val_loss: 0.4110 - val_acc: 0.9701
+Epoch 33/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0524 - acc: 0.9957Epoch 00033: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_33.h5
+31018/31018 [==============================] - 2608s 84ms/step - loss: 0.0524 - acc: 0.9957 - val_loss: 0.4002 - val_acc: 0.9707
+Epoch 34/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0561 - acc: 0.9957Epoch 00034: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_34.h5
+31018/31018 [==============================] - 2601s 84ms/step - loss: 0.0561 - acc: 0.9957 - val_loss: 0.4097 - val_acc: 0.9701
+Epoch 35/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0541 - acc: 0.9960Epoch 00035: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_35.h5
+31018/31018 [==============================] - 2597s 84ms/step - loss: 0.0540 - acc: 0.9960 - val_loss: 0.4081 - val_acc: 0.9701
+Epoch 36/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0557 - acc: 0.9957Epoch 00036: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_36.h5
+
+Epoch 00036: reducing learning rate to 1.00000011116e-07.
+31018/31018 [==============================] - 2590s 83ms/step - loss: 0.0557 - acc: 0.9957 - val_loss: 0.4125 - val_acc: 0.9701
+Epoch 37/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0546 - acc: 0.9955Epoch 00037: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_37.h5
+31018/31018 [==============================] - 2588s 83ms/step - loss: 0.0546 - acc: 0.9955 - val_loss: 0.3980 - val_acc: 0.9710
+Epoch 38/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0509 - acc: 0.9960Epoch 00038: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_38.h5
+31018/31018 [==============================] - 2605s 84ms/step - loss: 0.0509 - acc: 0.9960 - val_loss: 0.4191 - val_acc: 0.9695
+Epoch 39/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0561 - acc: 0.9956Epoch 00039: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_39.h5
+31018/31018 [==============================] - 2599s 84ms/step - loss: 0.0561 - acc: 0.9956 - val_loss: 0.4102 - val_acc: 0.9701
+Epoch 40/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0567 - acc: 0.9955Epoch 00040: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_40.h5
+31018/31018 [==============================] - 2600s 84ms/step - loss: 0.0567 - acc: 0.9955 - val_loss: 0.4107 - val_acc: 0.9698
+Epoch 41/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0539 - acc: 0.9959Epoch 00041: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_41.h5
+
+Epoch 00041: reducing learning rate to 1.00000008274e-08.
+31018/31018 [==============================] - 2603s 84ms/step - loss: 0.0539 - acc: 0.9959 - val_loss: 0.4056 - val_acc: 0.9704
+Epoch 42/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0534 - acc: 0.9959Epoch 00042: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_42.h5
+31018/31018 [==============================] - 2598s 84ms/step - loss: 0.0534 - acc: 0.9959 - val_loss: 0.4229 - val_acc: 0.9695
+Epoch 43/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0552 - acc: 0.9958Epoch 00043: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_43.h5
+
+Epoch 00043: reducing learning rate to 1.00000008274e-09.
+31018/31018 [==============================] - 2605s 84ms/step - loss: 0.0557 - acc: 0.9957 - val_loss: 0.3951 - val_acc: 0.9707
+Epoch 44/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0546 - acc: 0.9958Epoch 00044: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_44.h5
+31018/31018 [==============================] - 2594s 84ms/step - loss: 0.0546 - acc: 0.9958 - val_loss: 0.4198 - val_acc: 0.9698
+Epoch 45/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0534 - acc: 0.9960Epoch 00045: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_45.h5
+
+Epoch 00045: reducing learning rate to 1.00000008274e-10.
+31018/31018 [==============================] - 2604s 84ms/step - loss: 0.0534 - acc: 0.9960 - val_loss: 0.4101 - val_acc: 0.9701
+Epoch 46/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0522 - acc: 0.9958Epoch 00046: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_46.h5
+31018/31018 [==============================] - 2603s 84ms/step - loss: 0.0522 - acc: 0.9958 - val_loss: 0.3958 - val_acc: 0.9710
+Epoch 47/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0549 - acc: 0.9956Epoch 00047: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_47.h5
+
+Epoch 00047: reducing learning rate to 1.00000008274e-11.
+31018/31018 [==============================] - 2602s 84ms/step - loss: 0.0549 - acc: 0.9956 - val_loss: 0.4099 - val_acc: 0.9701
+Epoch 48/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0538 - acc: 0.9958Epoch 00048: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_48.h5
+31018/31018 [==============================] - 2596s 84ms/step - loss: 0.0538 - acc: 0.9958 - val_loss: 0.4187 - val_acc: 0.9695
+Epoch 49/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0550 - acc: 0.9956Epoch 00049: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_49.h5
+
+Epoch 00049: reducing learning rate to 1.00000008274e-12.
+31018/31018 [==============================] - 2599s 84ms/step - loss: 0.0550 - acc: 0.9956 - val_loss: 0.4059 - val_acc: 0.9704
+Epoch 50/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.0530 - acc: 0.9959Epoch 00050: saving model to /home/chengfeng/projects/004-nsp/exps/005-fuse-local-feature/../../data/snapshots/005-fuse-local-feature/resnet50_nsp_50.h5
+31018/31018 [==============================] - 2600s 84ms/step - loss: 0.0530 - acc: 0.9959 - val_loss: 0.4052 - val_acc: 0.9704

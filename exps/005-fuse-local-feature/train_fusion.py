@@ -88,10 +88,10 @@ def create_callbacks(model, training_model, prediction_model, val_generator):
         embeddings_metadata=None)
     callbacks.append(tensorboard_callback)
 
-    from keras_retinanet.callbacks.eval import Evaluate
-    evaluation = Evaluate(val_generator, tensorboard=tensorboard_callback)
-    evaluation = RedirectModel(evaluation, prediction_model)
-    callbacks.append(evaluation)
+    # from keras_retinanet.callbacks.eval import Evaluate
+    # evaluation = Evaluate(val_generator, tensorboard=tensorboard_callback)
+    # evaluation = RedirectModel(evaluation, prediction_model)
+    # callbacks.append(evaluation)
 
     return callbacks
 
@@ -163,15 +163,15 @@ if __name__ == '__main__':
     # compile model (note: set loss to None since loss is added inside layer)
     training_model.compile(
         loss={
-             # 'regression': keras_retinanet.losses.smooth_l1(),
-             # 'classification': keras_retinanet.losses.focal(),
+            # 'regression': keras_retinanet.losses.smooth_l1(),
+            # 'classification': keras_retinanet.losses.focal(),
             # 'global_cls': 'categorical_crossentropy',
             'fusion_classification': 'categorical_crossentropy'
         },
         metrics={'fusion_classification': 'accuracy'},
         # optimizer=keras.optimizers.adam(lr=1e-5, clipnorm=0.001))
         optimizer=keras.optimizers.sgd(
-            lr=1e-2, decay=1e-6, momentum=0.9, nesterov=True))
+            lr=1e-3, decay=1e-6, momentum=0.9, nesterov=True))
 
     # print model summary
     print(training_model.summary())

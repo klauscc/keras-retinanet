@@ -123,10 +123,10 @@ def nspnet(inputs,
     normalize_boxes = layers.NormalizeBoxes(name='normalize_boxes')(
         [inputs, boxes])
 
-    # feature_list = features[0:4]  # [P3, P4, P5, P6]
-    feature_list = features[0:5]  # [P3, P4, P5, P6, P7]
-    nms_classification = layers.NonMaximumSuppression(name='nms', trainable=False)(
-        [boxes, classification])
+    feature_list = features[0:5]  # [P3, P4, P5, P6]
+    # feature_list = features[0:5]  # [P3, P4, P5, P6, P7]
+    nms_classification = layers.NonMaximumSuppression(
+        name='nms', trainable=False)([boxes, classification])
 
     layer_config = {
         'pool_shape': [7, 7],
@@ -135,7 +135,8 @@ def nspnet(inputs,
     }
     selected_roi_feature_list = [
         layers.TopRoiAligns(
-            name='TopRoiALigns_level{}'.format(i), trainable=False,
+            name='TopRoiALigns_level{}'.format(i),
+            trainable=False,
             **layer_config)([feature, normalize_boxes, nms_classification])
         for i, feature in enumerate(feature_list)
     ]
@@ -147,18 +148,18 @@ def nspnet(inputs,
         extraction_feature_channels=256)
     local_feature = local_feature_model(selected_roi_features)
     # local_feature = keras.layers.TimeDistributed(keras.layers.Conv2D(256, (3,3) ) )(selected_roi_features)
-    print (global_feature) 
+    print(global_feature)
     print(local_feature)
-    print (global_feature.get_shape() ) 
-    print (local_feature.get_shape() ) 
+    print(global_feature.get_shape())
+    print(local_feature.get_shape())
 
-    # classification_feature = keras.layers.Concatenate()(
-        # [global_feature, local_feature])
     classification_feature = keras.layers.Concatenate()(
         [local_feature, global_feature])
+    # classification_feature = global_feature
 
     nsp_classification = keras.layers.Dense(
-        3, name='fusion_classification')(classification_feature)
+        3, activation='softmax',
+        name='fusion_classification')(classification_feature)
 
     #build stage1 model
     stage1_outputs = [

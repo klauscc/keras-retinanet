@@ -6,3 +6,4 @@ __pycache__/
 *wsl3
 *.h5
 data*
+tensorboard

@@ -1,0 +1,592 @@
+22227/31018 [====================>.........] - ETA: 37:09 - loss: 3.0933 - regression_loss: 1.9269 - classification_loss: 0.4650 - global_cls_loss: 0.7014 - global_cls_acc: 0.8880/home
+/klaus/.conda/envs/nsp/lib/python2.7/site-packages/PIL/TiffImagePlugin.py:742: UserWarning: Corrupt EXIF data.  Expecting to read 2 bytes but only got 0. 
+  warnings.warn(str(msg))
+31017/31018 [============================>.] - ETA: 0s - loss: 2.9208 - regression_loss: 1.8405 - classification_loss: 0.4345 - global_cls_loss: 0.6458 - global_cls_acc: 0.8977Epoch 00
+001: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_01.h5
+('breast', '0.8370')
+('vulva', '0.3104')
+('dick', '0.7100')
+('pubes', '0.5053')
+('ass', '0.5973')
+('breast_sexy', '0.4342')
+('frontleg_sexy', '0.2661')
+('ass_sexy', '0.2176')
+('back_sexy', '0.0859')
+('body_sexy', '0.4681')
+mAP: 0.4432
+31018/31018 [==============================] - 8542s 275ms/step - loss: 2.9208 - regression_loss: 1.8405 - classification_loss: 0.4345 - global_cls_loss: 0.6458 - global_cls_acc: 0.897
+7 - val_loss: 3.0815 - val_regression_loss: 1.5677 - val_classification_loss: 0.4433 - val_global_cls_loss: 1.0706 - val_global_cls_acc: 0.8588
+Epoch 2/50
+31017/31018 [============================>.] - ETA: 0s - loss: 2.1730 - regression_loss: 1.4884 - classification_loss: 0.3032 - global_cls_loss: 0.3814 - global_cls_acc: 0.9432Epoch 00
+002: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_02.h5
+('breast', '0.8853')
+('vulva', '0.4785')
+('dick', '0.8342')
+('pubes', '0.6592')
+('ass', '0.6390')
+('breast_sexy', '0.6715')
+('frontleg_sexy', '0.4997')
+('ass_sexy', '0.5144')
+('back_sexy', '0.2918')
+('body_sexy', '0.7105')
+mAP: 0.6184
+31018/31018 [==============================] - 8449s 272ms/step - loss: 2.1731 - regression_loss: 1.4884 - classification_loss: 0.3032 - global_cls_loss: 0.3814 - global_cls_acc: 0.943
+2 - val_loss: 2.1968 - val_regression_loss: 1.5815 - val_classification_loss: 0.2541 - val_global_cls_loss: 0.3612 - val_global_cls_acc: 0.9479
+Epoch 3/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.9373 - regression_loss: 1.3673 - classification_loss: 0.2669 - global_cls_loss: 0.3030 - global_cls_acc: 0.9546Epoch 00
+003: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_03.h5
+('breast', '0.9132')
+('vulva', '0.5277')
+('dick', '0.8840')
+('pubes', '0.7228')
+('ass', '0.7400')
+('breast_sexy', '0.6652')
+('frontleg_sexy', '0.5493')
+('ass_sexy', '0.5134')
+('back_sexy', '0.3778')
+('body_sexy', '0.7119')
+mAP: 0.6605
+31018/31018 [==============================] - 8461s 273ms/step - loss: 1.9372 - regression_loss: 1.3673 - classification_loss: 0.2669 - global_cls_loss: 0.3030 - global_cls_acc: 0.954
+6 - val_loss: 1.9399 - val_regression_loss: 1.3949 - val_classification_loss: 0.2694 - val_global_cls_loss: 0.2755 - val_global_cls_acc: 0.9602
+Epoch 4/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.7766 - regression_loss: 1.2836 - classification_loss: 0.2400 - global_cls_loss: 0.2530 - global_cls_acc: 0.9622Epoch 00
+004: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_04.h5
+('breast', '0.9231')
+('vulva', '0.5115')
+('dick', '0.8896')
+('pubes', '0.7274')
+('ass', '0.7782')
+('breast_sexy', '0.7750')
+('frontleg_sexy', '0.6206')
+('ass_sexy', '0.5366')
+('back_sexy', '0.3572')
+('body_sexy', '0.7506')
+mAP: 0.6870
+31018/31018 [==============================] - 8119s 262ms/step - loss: 1.7766 - regression_loss: 1.2836 - classification_loss: 0.2400 - global_cls_loss: 0.2530 - global_cls_acc: 0.962
+2 - val_loss: 1.8765 - val_regression_loss: 1.3694 - val_classification_loss: 0.2224 - val_global_cls_loss: 0.2848 - val_global_cls_acc: 0.9564
+Epoch 5/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.6450 - regression_loss: 1.2143 - classification_loss: 0.2220 - global_cls_loss: 0.2087 - global_cls_acc: 0.9692Epoch 00
+005: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_05.h5
+('breast', '0.9263')
+('vulva', '0.5611')
+('dick', '0.8678')
+('pubes', '0.7440')
+('ass', '0.7887')
+('breast_sexy', '0.7389')
+('frontleg_sexy', '0.6575')
+('ass_sexy', '0.5253')
+('back_sexy', '0.4699')
+('body_sexy', '0.7727')
+mAP: 0.7052
+31018/31018 [==============================] - 8128s 262ms/step - loss: 1.6450 - regression_loss: 1.2143 - classification_loss: 0.2220 - global_cls_loss: 0.2087 - global_cls_acc: 0.969
+2 - val_loss: 1.9186 - val_regression_loss: 1.3451 - val_classification_loss: 0.2927 - val_global_cls_loss: 0.2808 - val_global_cls_acc: 0.9637
+Epoch 6/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.5236 - regression_loss: 1.1521 - classification_loss: 0.2005 - global_cls_loss: 0.1709 - global_cls_acc: 0.9745Epoch 00
+006: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_06.h5
+('breast', '0.9288')
+('vulva', '0.5900')
+('dick', '0.9036')
+('pubes', '0.7403')
+('ass', '0.7884')
+('breast_sexy', '0.7472')
+('frontleg_sexy', '0.6184')
+('ass_sexy', '0.5451')
+('back_sexy', '0.3317')
+('body_sexy', '0.7572')
+mAP: 0.6951
+31018/31018 [==============================] - 8208s 265ms/step - loss: 1.5236 - regression_loss: 1.1522 - classification_loss: 0.2005 - global_cls_loss: 0.1709 - global_cls_acc: 0.974
+5 - val_loss: 1.8717 - val_regression_loss: 1.3310 - val_classification_loss: 0.2721 - val_global_cls_loss: 0.2685 - val_global_cls_acc: 0.9622
+Epoch 7/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.4160 - regression_loss: 1.0946 - classification_loss: 0.1828 - global_cls_loss: 0.1387 - global_cls_acc: 0.9793Epoch 00
+007: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_07.h5
+('breast', '0.9301')
+('vulva', '0.6139')
+('dick', '0.9129')
+('pubes', '0.7644')
+('ass', '0.7879')
+('breast_sexy', '0.7511')
+('frontleg_sexy', '0.5920')
+('ass_sexy', '0.5861')
+('back_sexy', '0.4845')
+('body_sexy', '0.7186')
+mAP: 0.7142
+31018/31018 [==============================] - 8658s 279ms/step - loss: 1.4165 - regression_loss: 1.0946 - classification_loss: 0.1828 - global_cls_loss: 0.1391 - global_cls_acc: 0.979
+2 - val_loss: 2.0363 - val_regression_loss: 1.3519 - val_classification_loss: 0.3262 - val_global_cls_loss: 0.3581 - val_global_cls_acc: 0.9496
+Epoch 8/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.3215 - regression_loss: 1.0368 - classification_loss: 0.1673 - global_cls_loss: 0.1174 - global_cls_acc: 0.9820Epoch 00
+008: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_08.h5
+('breast', '0.9307')
+('vulva', '0.5820')
+('dick', '0.9027')
+('pubes', '0.7588')
+('ass', '0.7925')
+('breast_sexy', '0.8213')
+('frontleg_sexy', '0.6961')
+('ass_sexy', '0.5785')
+('back_sexy', '0.5288')
+('body_sexy', '0.8060')
+mAP: 0.7397
+31018/31018 [==============================] - 8315s 268ms/step - loss: 1.3215 - regression_loss: 1.0367 - classification_loss: 0.1673 - global_cls_loss: 0.1174 - global_cls_acc: 0.982
+0 - val_loss: 2.0262 - val_regression_loss: 1.3110 - val_classification_loss: 0.4310 - val_global_cls_loss: 0.2842 - val_global_cls_acc: 0.9663
+Epoch 9/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.2327 - regression_loss: 0.9834 - classification_loss: 0.1498 - global_cls_loss: 0.0995 - global_cls_acc: 0.9843Epoch 00
+009: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_09.h5
+('breast', '0.9385')
+('vulva', '0.5667')
+('dick', '0.9155')
+('pubes', '0.7455')
+('ass', '0.8031')
+('breast_sexy', '0.7979')
+('frontleg_sexy', '0.6748')
+('ass_sexy', '0.6248')
+('back_sexy', '0.5847')
+('body_sexy', '0.7717')
+mAP: 0.7423
+31018/31018 [==============================] - 8179s 264ms/step - loss: 1.2327 - regression_loss: 0.9834 - classification_loss: 0.1498 - global_cls_loss: 0.0995 - global_cls_acc: 0.984
+3 - val_loss: 1.8700 - val_regression_loss: 1.3135 - val_classification_loss: 0.2582 - val_global_cls_loss: 0.2983 - val_global_cls_acc: 0.9643
+Epoch 10/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.1471 - regression_loss: 0.9315 - classification_loss: 0.1364 - global_cls_loss: 0.0792 - global_cls_acc: 0.9883Epoch 00
+010: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_10.h5
+('breast', '0.9442')
+('vulva', '0.5859')
+('dick', '0.8881')
+('pubes', '0.7583')
+('ass', '0.8085')
+('breast_sexy', '0.7890')
+('frontleg_sexy', '0.7111')
+('ass_sexy', '0.5600')
+('back_sexy', '0.5536')
+('body_sexy', '0.8102')
+mAP: 0.7409
+31018/31018 [==============================] - 8217s 265ms/step - loss: 1.1471 - regression_loss: 0.9316 - classification_loss: 0.1364 - global_cls_loss: 0.0792 - global_cls_acc: 0.988
+3 - val_loss: 1.9058 - val_regression_loss: 1.3191 - val_classification_loss: 0.3438 - val_global_cls_loss: 0.2429 - val_global_cls_acc: 0.9684
+Epoch 11/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.0782 - regression_loss: 0.8839 - classification_loss: 0.1253 - global_cls_loss: 0.0691 - global_cls_acc: 0.9892Epoch 00
+011: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_11.h5
+('breast', '0.9403')
+('vulva', '0.5973')
+('dick', '0.9057')
+('pubes', '0.7705')
+('ass', '0.8067')
+('breast_sexy', '0.8002')
+('frontleg_sexy', '0.6958')
+('ass_sexy', '0.5523')
+('back_sexy', '0.6119')
+('body_sexy', '0.7802')
+mAP: 0.7461
+31018/31018 [==============================] - 12327s 397ms/step - loss: 1.0782 - regression_loss: 0.8839 - classification_loss: 0.1253 - global_cls_loss: 0.0691 - global_cls_acc: 0.98
+92 - val_loss: 1.8289 - val_regression_loss: 1.2996 - val_classification_loss: 0.2940 - val_global_cls_loss: 0.2354 - val_global_cls_acc: 0.9681
+Epoch 12/50
+31017/31018 [============================>.] - ETA: 0s - loss: 1.0131 - regression_loss: 0.8427 - classification_loss: 0.1148 - global_cls_loss: 0.0556 - global_cls_acc: 0.9913Epoch 00
+012: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_12.h5
+('breast', '0.9427')
+('vulva', '0.5461')
+('dick', '0.9056')
+('pubes', '0.7701')
+('ass', '0.8036')
+('breast_sexy', '0.7977')
+('frontleg_sexy', '0.6987')
+('ass_sexy', '0.5838')
+('back_sexy', '0.5863')
+('body_sexy', '0.8149')
+mAP: 0.7449
+31018/31018 [==============================] - 7964s 257ms/step - loss: 1.0131 - regression_loss: 0.8427 - classification_loss: 0.1148 - global_cls_loss: 0.0556 - global_cls_acc: 0.991
+3 - val_loss: 1.9427 - val_regression_loss: 1.3057 - val_classification_loss: 0.3859 - val_global_cls_loss: 0.2510 - val_global_cls_acc: 0.9681
+Epoch 13/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.9512 - regression_loss: 0.8007 - classification_loss: 0.1034 - global_cls_loss: 0.0471 - global_cls_acc: 0.9926Epoch 00
+013: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_13.h5
+('breast', '0.9408')
+('vulva', '0.5873')
+('dick', '0.8986')
+('pubes', '0.7484')
+('ass', '0.7978')
+('breast_sexy', '0.7960')
+('frontleg_sexy', '0.7017')
+('ass_sexy', '0.5998')
+('back_sexy', '0.5857')
+('body_sexy', '0.8033')
+mAP: 0.7459
+31018/31018 [==============================] - 7969s 257ms/step - loss: 0.9512 - regression_loss: 0.8007 - classification_loss: 0.1034 - global_cls_loss: 0.0471 - global_cls_acc: 0.992
+6 - val_loss: 1.9427 - val_regression_loss: 1.2971 - val_classification_loss: 0.3580 - val_global_cls_loss: 0.2875 - val_global_cls_acc: 0.9625
+Epoch 14/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.9015 - regression_loss: 0.7623 - classification_loss: 0.0936 - global_cls_loss: 0.0456 - global_cls_acc: 0.9933Epoch 00
+014: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_14.h5
+('breast', '0.9384')
+('vulva', '0.5559')
+('dick', '0.9039')
+('pubes', '0.7546')
+('ass', '0.8039')
+('breast_sexy', '0.7674')
+('frontleg_sexy', '0.6618')
+('ass_sexy', '0.6041')
+('back_sexy', '0.5886')
+('body_sexy', '0.7554')
+mAP: 0.7334
+31018/31018 [==============================] - 7916s 255ms/step - loss: 0.9015 - regression_loss: 0.7623 - classification_loss: 0.0936 - global_cls_loss: 0.0456 - global_cls_acc: 0.993
+3 - val_loss: 2.0321 - val_regression_loss: 1.3211 - val_classification_loss: 0.3573 - val_global_cls_loss: 0.3537 - val_global_cls_acc: 0.9552
+Epoch 15/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.8554 - regression_loss: 0.7293 - classification_loss: 0.0884 - global_cls_loss: 0.0377 - global_cls_acc: 0.9941Epoch 00
+015: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_15.h5
+('breast', '0.9420')
+('vulva', '0.5842')
+('dick', '0.9046')
+('pubes', '0.7595')
+('ass', '0.8063')
+('breast_sexy', '0.8069')
+('frontleg_sexy', '0.7068')
+('ass_sexy', '0.5964')
+('back_sexy', '0.6325')
+('body_sexy', '0.8121')
+mAP: 0.7551
+31018/31018 [==============================] - 7931s 256ms/step - loss: 0.8554 - regression_loss: 0.7293 - classification_loss: 0.0884 - global_cls_loss: 0.0377 - global_cls_acc: 0.994
+1 - val_loss: 2.1677 - val_regression_loss: 1.3368 - val_classification_loss: 0.5435 - val_global_cls_loss: 0.2874 - val_global_cls_acc: 0.9578
+Epoch 16/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.8149 - regression_loss: 0.6955 - classification_loss: 0.0837 - global_cls_loss: 0.0358 - global_cls_acc: 0.9946Epoch 00
+016: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_16.h5
+('breast', '0.9438')
+('vulva', '0.5336')
+('dick', '0.9057')
+('pubes', '0.7799')
+('ass', '0.8164')
+('breast_sexy', '0.7830')
+('frontleg_sexy', '0.7097')
+('ass_sexy', '0.5850')
+('back_sexy', '0.5856')
+('body_sexy', '0.7995')
+mAP: 0.7442
+31018/31018 [==============================] - 7916s 255ms/step - loss: 0.8149 - regression_loss: 0.6955 - classification_loss: 0.0837 - global_cls_loss: 0.0358 - global_cls_acc: 0.994
+6 - val_loss: 2.0319 - val_regression_loss: 1.3317 - val_classification_loss: 0.4581 - val_global_cls_loss: 0.2420 - val_global_cls_acc: 0.9692
+Epoch 17/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.7780 - regression_loss: 0.6689 - classification_loss: 0.0741 - global_cls_loss: 0.0350 - global_cls_acc: 0.9951Epoch 00
+017: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_17.h5
+('breast', '0.9340')
+('vulva', '0.5440')
+('dick', '0.8884')
+('pubes', '0.7426')
+('ass', '0.8192')
+('breast_sexy', '0.7883')
+('frontleg_sexy', '0.6698')
+('ass_sexy', '0.5660')
+('back_sexy', '0.6003')
+('body_sexy', '0.7900')
+mAP: 0.7342
+31018/31018 [==============================] - 8147s 263ms/step - loss: 0.7780 - regression_loss: 0.6690 - classification_loss: 0.0741 - global_cls_loss: 0.0350 - global_cls_acc: 0.995
+1 - val_loss: 2.0846 - val_regression_loss: 1.3341 - val_classification_loss: 0.4532 - val_global_cls_loss: 0.2973 - val_global_cls_acc: 0.9631
+Epoch 18/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.7421 - regression_loss: 0.6422 - classification_loss: 0.0686 - global_cls_loss: 0.0313 - global_cls_acc: 0.9950Epoch 00
+018: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_18.h5
+('breast', '0.9294')
+('vulva', '0.5040')
+('dick', '0.9030')
+('pubes', '0.7298')
+('ass', '0.7708')
+('breast_sexy', '0.7628')
+('frontleg_sexy', '0.7027')
+('ass_sexy', '0.5830')
+('back_sexy', '0.6198')
+('body_sexy', '0.8118')
+mAP: 0.7317
+31018/31018 [==============================] - 7932s 256ms/step - loss: 0.7421 - regression_loss: 0.6422 - classification_loss: 0.0686 - global_cls_loss: 0.0313 - global_cls_acc: 0.995
+0 - val_loss: 2.0747 - val_regression_loss: 1.3401 - val_classification_loss: 0.4124 - val_global_cls_loss: 0.3221 - val_global_cls_acc: 0.9575
+Epoch 19/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.7077 - regression_loss: 0.6173 - classification_loss: 0.0636 - global_cls_loss: 0.0268 - global_cls_acc: 0.9956Epoch 00
+019: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_19.h5
+('breast', '0.9269')
+('vulva', '0.5491')
+('dick', '0.9030')
+('pubes', '0.7483')
+('ass', '0.8049')
+('breast_sexy', '0.7746')
+('frontleg_sexy', '0.6652')
+('ass_sexy', '0.6184')
+('back_sexy', '0.5976')
+('body_sexy', '0.7798')
+mAP: 0.7368
+31018/31018 [==============================] - 7914s 255ms/step - loss: 0.7077 - regression_loss: 0.6173 - classification_loss: 0.0636 - global_cls_loss: 0.0268 - global_cls_acc: 0.995
+6 - val_loss: 2.0667 - val_regression_loss: 1.3328 - val_classification_loss: 0.4584 - val_global_cls_loss: 0.2754 - val_global_cls_acc: 0.9634
+Epoch 20/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.6794 - regression_loss: 0.5957 - classification_loss: 0.0593 - global_cls_loss: 0.0245 - global_cls_acc: 0.9955Epoch 00
+020: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_20.h5
+('breast', '0.9400')
+('vulva', '0.5543')
+('dick', '0.9024')
+('pubes', '0.7305')
+('ass', '0.8113')
+('breast_sexy', '0.7972')
+('frontleg_sexy', '0.6677')
+('ass_sexy', '0.5479')
+('back_sexy', '0.5585')
+('body_sexy', '0.7756')
+mAP: 0.7285
+31018/31018 [==============================] - 7929s 256ms/step - loss: 0.6794 - regression_loss: 0.5957 - classification_loss: 0.0593 - global_cls_loss: 0.0245 - global_cls_acc: 0.995
+5 - val_loss: 2.2654 - val_regression_loss: 1.3610 - val_classification_loss: 0.6441 - val_global_cls_loss: 0.2603 - val_global_cls_acc: 0.9651
+Epoch 21/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.6527 - regression_loss: 0.5765 - classification_loss: 0.0557 - global_cls_loss: 0.0205 - global_cls_acc: 0.9966Epoch 00
+021: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_21.h5
+('breast', '0.9315')
+('vulva', '0.5718')
+('dick', '0.8807')
+('pubes', '0.7560')
+('ass', '0.7894')
+('breast_sexy', '0.7539')
+('frontleg_sexy', '0.6593')
+('ass_sexy', '0.5852')
+('back_sexy', '0.5627')
+('body_sexy', '0.7643')
+mAP: 0.7255
+31018/31018 [==============================] - 7948s 256ms/step - loss: 0.6527 - regression_loss: 0.5765 - classification_loss: 0.0557 - global_cls_loss: 0.0205 - global_cls_acc: 0.996
+6 - val_loss: 2.1039 - val_regression_loss: 1.3364 - val_classification_loss: 0.4252 - val_global_cls_loss: 0.3423 - val_global_cls_acc: 0.9558
+Epoch 22/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.6299 - regression_loss: 0.5571 - classification_loss: 0.0514 - global_cls_loss: 0.0213 - global_cls_acc: 0.9965Epoch 00
+022: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_22.h5
+('breast', '0.9283')
+('vulva', '0.5443')
+('dick', '0.8869')
+('pubes', '0.7513')
+('ass', '0.8177')
+('breast_sexy', '0.7913')
+('frontleg_sexy', '0.6587')
+('ass_sexy', '0.6132')
+('back_sexy', '0.5952')
+('body_sexy', '0.7788')
+mAP: 0.7366
+31018/31018 [==============================] - 7977s 257ms/step - loss: 0.6299 - regression_loss: 0.5571 - classification_loss: 0.0514 - global_cls_loss: 0.0213 - global_cls_acc: 0.996
+5 - val_loss: 2.0946 - val_regression_loss: 1.3446 - val_classification_loss: 0.4863 - val_global_cls_loss: 0.2638 - val_global_cls_acc: 0.9663
+Epoch 23/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.6088 - regression_loss: 0.5400 - classification_loss: 0.0495 - global_cls_loss: 0.0193 - global_cls_acc: 0.9969Epoch 00
+023: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_23.h5
+('breast', '0.9408')
+('vulva', '0.5387')
+('dick', '0.8846')
+('pubes', '0.7590')
+('ass', '0.7731')
+('breast_sexy', '0.7947')
+('frontleg_sexy', '0.6553')
+('ass_sexy', '0.5950')
+('back_sexy', '0.6437')
+('body_sexy', '0.7993')
+mAP: 0.7384
+31018/31018 [==============================] - 7992s 258ms/step - loss: 0.6088 - regression_loss: 0.5400 - classification_loss: 0.0495 - global_cls_loss: 0.0193 - global_cls_acc: 0.996
+9 - val_loss: 2.1064 - val_regression_loss: 1.3619 - val_classification_loss: 0.4662 - val_global_cls_loss: 0.2782 - val_global_cls_acc: 0.9637
+Epoch 24/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.5830 - regression_loss: 0.5227 - classification_loss: 0.0445 - global_cls_loss: 0.0157 - global_cls_acc: 0.9972Epoch 00
+024: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_24.h5
+('breast', '0.9378')
+('vulva', '0.5146')
+('dick', '0.8819')
+('pubes', '0.7512')
+('ass', '0.7966')
+('breast_sexy', '0.7810')
+('frontleg_sexy', '0.6970')
+('ass_sexy', '0.5814')
+('back_sexy', '0.5741')
+('body_sexy', '0.8259')
+mAP: 0.7341
+31018/31018 [==============================] - 7998s 258ms/step - loss: 0.5830 - regression_loss: 0.5227 - classification_loss: 0.0445 - global_cls_loss: 0.0157 - global_cls_acc: 0.997
+2 - val_loss: 2.3235 - val_regression_loss: 1.3404 - val_classification_loss: 0.7533 - val_global_cls_loss: 0.2298 - val_global_cls_acc: 0.9660
+Epoch 25/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.5680 - regression_loss: 0.5095 - classification_loss: 0.0427 - global_cls_loss: 0.0158 - global_cls_acc: 0.9969Epoch 00
+025: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_25.h5
+('breast', '0.9326')
+('vulva', '0.5198')
+('dick', '0.8826')
+('pubes', '0.7541')
+('ass', '0.8051')
+('breast_sexy', '0.7776')
+('frontleg_sexy', '0.6630')
+('ass_sexy', '0.5870')
+('back_sexy', '0.5741')
+('body_sexy', '0.7956')
+mAP: 0.7291
+31018/31018 [==============================] - 7997s 258ms/step - loss: 0.5680 - regression_loss: 0.5095 - classification_loss: 0.0427 - global_cls_loss: 0.0158 - global_cls_acc: 0.996
+9 - val_loss: 2.2170 - val_regression_loss: 1.3266 - val_classification_loss: 0.5807 - val_global_cls_loss: 0.3097 - val_global_cls_acc: 0.9575
+Epoch 26/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.5515 - regression_loss: 0.4960 - classification_loss: 0.0413 - global_cls_loss: 0.0141 - global_cls_acc: 0.9975Epoch 00
+026: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_26.h5
+('breast', '0.9298')
+('vulva', '0.5218')
+('dick', '0.8613')
+('pubes', '0.7551')
+('ass', '0.7997')
+('breast_sexy', '0.7809')
+('frontleg_sexy', '0.6424')
+('ass_sexy', '0.5533')
+('back_sexy', '0.5895')
+('body_sexy', '0.7832')
+mAP: 0.7217
+31018/31018 [==============================] - 7968s 257ms/step - loss: 0.5515 - regression_loss: 0.4960 - classification_loss: 0.0413 - global_cls_loss: 0.0141 - global_cls_acc: 0.997
+5 - val_loss: 2.1367 - val_regression_loss: 1.3411 - val_classification_loss: 0.5256 - val_global_cls_loss: 0.2700 - val_global_cls_acc: 0.9672
+Epoch 27/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.5326 - regression_loss: 0.4805 - classification_loss: 0.0385 - global_cls_loss: 0.0136 - global_cls_acc: 0.9977Epoch 00
+027: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_27.h5
+('breast', '0.9293')
+('vulva', '0.5352')
+('dick', '0.8795')
+('pubes', '0.7579')
+('ass', '0.8034')
+('breast_sexy', '0.7862')
+('frontleg_sexy', '0.6698')
+('ass_sexy', '0.5978')
+('back_sexy', '0.5620')
+('body_sexy', '0.8024')
+mAP: 0.7323
+31018/31018 [==============================] - 7947s 256ms/step - loss: 0.5326 - regression_loss: 0.4805 - classification_loss: 0.0385 - global_cls_loss: 0.0136 - global_cls_acc: 0.997
+7 - val_loss: 2.2773 - val_regression_loss: 1.3510 - val_classification_loss: 0.6860 - val_global_cls_loss: 0.2403 - val_global_cls_acc: 0.9666
+Epoch 28/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.5242 - regression_loss: 0.4701 - classification_loss: 0.0376 - global_cls_loss: 0.0165 - global_cls_acc: 0.9974Epoch 00
+028: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_28.h5
+('breast', '0.9333')
+('vulva', '0.5373')
+('dick', '0.8923')
+('pubes', '0.7225')
+('ass', '0.8074')
+('breast_sexy', '0.7807')
+('frontleg_sexy', '0.6706')
+('ass_sexy', '0.6298')
+('back_sexy', '0.5544')
+('body_sexy', '0.8121')
+mAP: 0.7340
+31018/31018 [==============================] - 7951s 256ms/step - loss: 0.5242 - regression_loss: 0.4701 - classification_loss: 0.0376 - global_cls_loss: 0.0165 - global_cls_acc: 0.997
+4 - val_loss: 2.1911 - val_regression_loss: 1.3625 - val_classification_loss: 0.5798 - val_global_cls_loss: 0.2488 - val_global_cls_acc: 0.9690
+Epoch 29/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.5047 - regression_loss: 0.4569 - classification_loss: 0.0345 - global_cls_loss: 0.0134 - global_cls_acc: 0.9979Epoch 00
+029: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_29.h5
+('breast', '0.9386')
+('vulva', '0.5023')
+('dick', '0.8750')
+('pubes', '0.7576')
+('ass', '0.7980')
+('breast_sexy', '0.7669')
+('frontleg_sexy', '0.6369')
+('ass_sexy', '0.6473')
+('back_sexy', '0.5559')
+('body_sexy', '0.7684')
+mAP: 0.7247
+31018/31018 [==============================] - 7962s 257ms/step - loss: 0.5047 - regression_loss: 0.4569 - classification_loss: 0.0345 - global_cls_loss: 0.0134 - global_cls_acc: 0.997
+9 - val_loss: 2.2137 - val_regression_loss: 1.3415 - val_classification_loss: 0.5656 - val_global_cls_loss: 0.3066 - val_global_cls_acc: 0.9599
+Epoch 30/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.4939 - regression_loss: 0.4481 - classification_loss: 0.0331 - global_cls_loss: 0.0128 - global_cls_acc: 0.9980Epoch 00
+030: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_30.h5
+('breast', '0.9256')
+('vulva', '0.5155')
+('dick', '0.8884')
+('pubes', '0.7360')
+('ass', '0.7994')
+('breast_sexy', '0.7555')
+('frontleg_sexy', '0.6457')
+('ass_sexy', '0.5885')
+('back_sexy', '0.5484')
+('body_sexy', '0.7715')
+mAP: 0.7175
+31018/31018 [==============================] - 7959s 257ms/step - loss: 0.4939 - regression_loss: 0.4481 - classification_loss: 0.0331 - global_cls_loss: 0.0128 - global_cls_acc: 0.998
+0 - val_loss: 2.2280 - val_regression_loss: 1.3709 - val_classification_loss: 0.5991 - val_global_cls_loss: 0.2580 - val_global_cls_acc: 0.9654
+Epoch 31/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.4810 - regression_loss: 0.4372 - classification_loss: 0.0321 - global_cls_loss: 0.0117 - global_cls_acc: 0.9978Epoch 00
+031: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_31.h5
+('breast', '0.9259')
+('vulva', '0.4897')
+('dick', '0.8883')
+('pubes', '0.7386')
+('ass', '0.7715')
+('breast_sexy', '0.7449')
+('frontleg_sexy', '0.6423')
+('ass_sexy', '0.5715')
+('back_sexy', '0.5666')
+('body_sexy', '0.7661')
+mAP: 0.7105
+31018/31018 [==============================] - 7952s 256ms/step - loss: 0.4810 - regression_loss: 0.4372 - classification_loss: 0.0321 - global_cls_loss: 0.0117 - global_cls_acc: 0.997
+8 - val_loss: 2.3779 - val_regression_loss: 1.3582 - val_classification_loss: 0.6646 - val_global_cls_loss: 0.3551 - val_global_cls_acc: 0.9564
+Epoch 32/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.4680 - regression_loss: 0.4280 - classification_loss: 0.0285 - global_cls_loss: 0.0114 - global_cls_acc: 0.9979Epoch 00
+032: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_32.h5
+('breast', '0.9295')
+('vulva', '0.5099')
+('dick', '0.8799')
+('pubes', '0.7419')
+('ass', '0.7938')
+('breast_sexy', '0.7398')
+('frontleg_sexy', '0.6890')
+('ass_sexy', '0.5695')
+('back_sexy', '0.5210')
+('body_sexy', '0.7797')
+mAP: 0.7154
+31018/31018 [==============================] - 8063s 260ms/step - loss: 0.4680 - regression_loss: 0.4280 - classification_loss: 0.0285 - global_cls_loss: 0.0114 - global_cls_acc: 0.997
+9 - val_loss: 2.3419 - val_regression_loss: 1.3388 - val_classification_loss: 0.6662 - val_global_cls_loss: 0.3369 - val_global_cls_acc: 0.9575
+Epoch 33/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.4589 - regression_loss: 0.4187 - classification_loss: 0.0290 - global_cls_loss: 0.0111 - global_cls_acc: 0.9983Epoch 00
+033: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_33.h5
+('breast', '0.9337')
+('vulva', '0.4828')
+('dick', '0.8933')
+('pubes', '0.7575')
+('ass', '0.7958')
+('breast_sexy', '0.7937')
+('frontleg_sexy', '0.6499')
+('ass_sexy', '0.5639')
+('back_sexy', '0.5655')
+('body_sexy', '0.7831')
+mAP: 0.7219
+31018/31018 [==============================] - 8049s 260ms/step - loss: 0.4589 - regression_loss: 0.4188 - classification_loss: 0.0290 - global_cls_loss: 0.0111 - global_cls_acc: 0.998
+3 - val_loss: 2.4435 - val_regression_loss: 1.3572 - val_classification_loss: 0.8026 - val_global_cls_loss: 0.2837 - val_global_cls_acc: 0.9610
+Epoch 34/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.4466 - regression_loss: 0.4109 - classification_loss: 0.0267 - global_cls_loss: 0.0090 - global_cls_acc: 0.9986Epoch 00
+034: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_34.h5
+('breast', '0.9334')
+('vulva', '0.4957')
+('dick', '0.8756')
+('pubes', '0.7541')
+('ass', '0.7751')
+('breast_sexy', '0.7587')
+('frontleg_sexy', '0.6455')
+('ass_sexy', '0.5746')
+('back_sexy', '0.5050')
+('body_sexy', '0.7962')
+mAP: 0.7114
+31018/31018 [==============================] - 8055s 260ms/step - loss: 0.4466 - regression_loss: 0.4109 - classification_loss: 0.0267 - global_cls_loss: 0.0090 - global_cls_acc: 0.998
+6 - val_loss: 2.2818 - val_regression_loss: 1.3265 - val_classification_loss: 0.6678 - val_global_cls_loss: 0.2875 - val_global_cls_acc: 0.9593
+Epoch 35/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.4375 - regression_loss: 0.4012 - classification_loss: 0.0262 - global_cls_loss: 0.0101 - global_cls_acc: 0.9984Epoch 00
+035: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_35.h5
+('breast', '0.9159')
+('vulva', '0.5040')
+('dick', '0.8846')
+('pubes', '0.7683')
+('ass', '0.7624')
+('breast_sexy', '0.7730')
+('frontleg_sexy', '0.6509')
+('ass_sexy', '0.6075')
+('back_sexy', '0.5897')
+('body_sexy', '0.7991')
+mAP: 0.7255
+31018/31018 [==============================] - 8105s 261ms/step - loss: 0.4375 - regression_loss: 0.4011 - classification_loss: 0.0262 - global_cls_loss: 0.0101 - global_cls_acc: 0.998
+4 - val_loss: 2.3026 - val_regression_loss: 1.3541 - val_classification_loss: 0.6503 - val_global_cls_loss: 0.2981 - val_global_cls_acc: 0.9634
+Epoch 36/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.4285 - regression_loss: 0.3936 - classification_loss: 0.0257 - global_cls_loss: 0.0093 - global_cls_acc: 0.9983Epoch 00
+036: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_36.h5
+('breast', '0.9240')
+('vulva', '0.4976')
+('dick', '0.8858')
+('pubes', '0.7215')
+('ass', '0.7999')
+('breast_sexy', '0.7894')
+('frontleg_sexy', '0.6781')
+('ass_sexy', '0.5880')
+('back_sexy', '0.5972')
+('body_sexy', '0.7904')
+mAP: 0.7272
+31018/31018 [==============================] - 8048s 259ms/step - loss: 0.4285 - regression_loss: 0.3936 - classification_loss: 0.0257 - global_cls_loss: 0.0093 - global_cls_acc: 0.998
+3 - val_loss: 2.5808 - val_regression_loss: 1.3665 - val_classification_loss: 0.9666 - val_global_cls_loss: 0.2477 - val_global_cls_acc: 0.9657
+Epoch 37/50
+31017/31018 [============================>.] - ETA: 0s - loss: 0.4172 - regression_loss: 0.3849 - classification_loss: 0.0233 - global_cls_loss: 0.0090 - global_cls_acc: 0.9984Epoch 00
+037: saving model to /home/klaus/projects/004-nsp/exps/003-multi-task-nsp/../../data/snapshots/003-multi-task-nsp/resnet50_nsp_37.h5
+('breast', '0.9118')
+('vulva', '0.5046')
+('dick', '0.8850')
+('pubes', '0.7086')
+('ass', '0.7693')
+('breast_sexy', '0.7394')
+('frontleg_sexy', '0.6588')
+('ass_sexy', '0.6443')
+('back_sexy', '0.5404')
+('body_sexy', '0.7793')
+mAP: 0.7142
